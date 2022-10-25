@@ -5,6 +5,6 @@
 
 #001 - [Tenzies Game](https://mo-tenzies-game.netlify.app/)
 
-#002 - Spinning Squares
+#002 - [Spinning Squares](https://mo-spinning-squares.netlify.app/)
 
 #003 - Square Pattern
