@@ -4,5 +4,7 @@
 # Challenges
 
 #001 - Tenzies Game
+
 #002 - Spinning Squares
+
 #003 - Square Pattern
