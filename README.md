@@ -7,4 +7,4 @@
 
 #002 - [Spinning Squares](https://mo-spinning-squares.netlify.app/)
 
-#003 - Square Pattern
+#003 - [Square Pattern](https://mo-square-pattern.netlify.app/)
