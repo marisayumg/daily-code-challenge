@@ -1,0 +1,15 @@
+Body
+  Background color: #ffe8b4
+
+Drawing container
+  Width: 500
+  Height: 500
+
+Square
+  Offset left: 250
+  Offset top: 250
+  Width: 100
+  Height: 100
+  Fill: #f9bc31
+  Stroke: none
+  Rotation: 0.05
