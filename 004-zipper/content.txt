@@ -1,0 +1,25 @@
+Body
+  Background color: #bcdffd
+
+Drawing container
+  Width: 500
+  Height: 500
+
+Shapes
+  Number of shapes: 25
+  Offset left: 250
+  Height: 10
+  Starting width: 0
+  Ending Width: 500
+  Fill: #5645d3
+  Stroke: none
+
+Animation
+  Loop duration: 4 seconds
+  Frames per second: 60
+
+-----------
+Variation 2
+-----------
+Body
+  Minimum height: 2000px

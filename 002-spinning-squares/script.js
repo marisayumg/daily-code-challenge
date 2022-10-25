@@ -22,7 +22,6 @@ for (let i = 0; i < numberOfShapes; i++) {
   // set each square at a different x and y depending on position on circle
   const x = plotRadius * Math.cos(angle);
   const y = plotRadius * Math.sin(angle);
-  const size = 90;
 
   // create a square
   const square = two.makeRectangle(x, y, 80, 200);
