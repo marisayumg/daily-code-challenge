@@ -3,7 +3,7 @@
 
 # Challenges
 
-#001 - Tenzies Game
+#001 - [Tenzies Game](https://mo-tenzies-game.netlify.app/)
 
 #002 - Spinning Squares
 
