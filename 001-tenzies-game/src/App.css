@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightsteelblue;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 2vw;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 100%;
+  margin-top: 8px;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+img {
+  height: 32px;
+  width: 32px;
+}
