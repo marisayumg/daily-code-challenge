@@ -1,0 +1,32 @@
+Body
+  Background color: #45D3C6
+
+Drawing container
+  Width: 500
+  Height: 500
+
+Shapes
+  Width: 20
+  Height: 20
+  Offset top (lined up): 250
+  Fill: #004F73
+  Stroke: none
+
+
+-----------
+Variation 2
+-----------
+
+Color schemes
+  One
+    Background: #45d3c5
+    Shapes: #004F73
+  Two
+    Background: #ffe8b4
+    Shapes: #f8bc30
+  Three
+    Background: #f9d2cd
+    Shapes: #f45745
+  Four
+    Background: #bcdffd
+    Shapes: #5745d3
