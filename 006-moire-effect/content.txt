@@ -1,0 +1,12 @@
+Body
+  Background color: #E4FFFD
+
+Animation
+  Loop duration: 12 //seconds
+  Frames per second: 60
+
+Shapes
+  Number of shapes: 25
+  Offset left: 250
+  Starting width: 50
+  Ending width: 500
