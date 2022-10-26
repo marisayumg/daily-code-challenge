@@ -12,3 +12,5 @@
 #004 - [Zipper](https://mo-zipper.netlify.app/)
 
 #005 - [Random Line](https://mo-random-line.netlify.app/)
+
+#006 - [Moiré Effect](https://mo-moire-effect.netlify.app/)
