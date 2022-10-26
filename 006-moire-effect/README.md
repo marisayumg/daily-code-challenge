@@ -7,7 +7,7 @@ See this project [live here](https://mo-moire-effect.netlify.app/).
 
 ## Description
 
-Animated shapes created with Two.js.
+Animated shapes created with Two.js to form an interesting Moiré pattern when overlapping.
 
 
 ## Requirements
