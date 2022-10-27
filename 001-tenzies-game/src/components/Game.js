@@ -4,9 +4,10 @@ import Die from "./Die";
 import { nanoid } from "nanoid";
 import Confetti from "react-confetti";
 
-export default function Game() {
+export default function Game(props) {
   const [dice, setDice] = React.useState(allNewDice);
   const [tenzies, setTenzies] = React.useState(false);
+  const [count, setCount] = React.useState(0);
 
   React.useEffect(() => {
     const allHeld = dice.every((die) => die.isHeld);
@@ -44,9 +45,11 @@ export default function Game() {
           return die.isHeld ? die : generateNewDice();
         })
       );
+      setCount((prevCount) => (prevCount += 1));
     } else {
       setTenzies(false);
       setDice(allNewDice);
+      setCount((prevCount) => (prevCount = 0));
     }
   }
 
@@ -78,6 +81,7 @@ export default function Game() {
       <RollButton onClick={rollDice}>
         {tenzies ? "New Game" : "Roll"}
       </RollButton>
+      <Counter>Your tries: {count}</Counter>
     </Container>
   );
 }
@@ -97,4 +101,10 @@ const RollButton = styled.button`
   color: white;
   padding: 16px 40px;
   cursor: pointer;
+`;
+
+const Counter = styled.div`
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
 `;

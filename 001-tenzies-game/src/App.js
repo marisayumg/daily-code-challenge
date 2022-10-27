@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Game from "./components/Game";
@@ -8,8 +9,6 @@ function App() {
     <div className="App">
       <Header />
       <Game />
-      {/* <aside>Themes</aside>
-      <aside>About</aside> */}
       <Footer />
     </div>
   );

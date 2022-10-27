@@ -26,6 +26,6 @@ const DieFace = styled.div`
 
   :hover {
     transform: scale(105%, 105%);
-    box-shadow: 8px 16px 16px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 8px 16px 16px rgba(0, 0, 0, 0.15); */
   }
 `;
