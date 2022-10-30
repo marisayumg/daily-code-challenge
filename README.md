@@ -14,3 +14,7 @@
 #005 - [Random Line](https://mo-random-line.netlify.app/)
 
 #006 - [Moiré Effect](https://mo-moire-effect.netlify.app/)
+
+#007 - Fakestore API call
+
+#008 - [Drumkit](https://vanilla-drumkit.netlify.app/)
