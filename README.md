@@ -15,6 +15,6 @@
 
 #006 - [Moiré Effect](https://mo-moire-effect.netlify.app/)
 
-#007 - Fakestore API call
+#007 - [Fakestore API call](https://fakestore-api-test.netlify.app/)
 
 #008 - [Drumkit](https://vanilla-drumkit.netlify.app/)
