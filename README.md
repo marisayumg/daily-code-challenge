@@ -19,4 +19,4 @@
 
 #008 - [Drumkit](https://vanilla-drumkit.netlify.app/)
 
-#009 – [Analog Clock](https://analog-clock-clock.netlify.app/).
+#009 – [Analog Clock](https://analog-clock-clock.netlify.app/)
