@@ -1,0 +1,41 @@
+:root {
+  --base: #bada55;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-weight: 100;
+  color: white;
+  background-color: #193549;
+  width: 100vw;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+img {
+  width: 60%;
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+.controls {
+  margin-bottom: 2rem;
+}
+
+span.highlight {
+  color: var(--base);
+}
