@@ -20,3 +20,5 @@
 #008 - [Drumkit](https://vanilla-drumkit.netlify.app/)
 
 #009 – [Analog Clock](https://analog-clock-clock.netlify.app/)
+
+#010 – [CSS variables](https://css-variables-update-with-js.netlify.app/)
