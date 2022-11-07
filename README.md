@@ -28,3 +28,5 @@
 #012 – [Array practice 2](https://array-practice-part2.netlify.app/)
 
 #013 – [Interactive split gallery](https://interactive-split-gallery.netlify.app/)
+
+#014 – [Interactive split gallery](https://type-ahead-search.netlify.app/)
