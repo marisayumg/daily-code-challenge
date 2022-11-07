@@ -29,4 +29,4 @@
 
 #013 – [Interactive split gallery](https://interactive-split-gallery.netlify.app/)
 
-#014 – [Interactive split gallery](https://type-ahead-search.netlify.app/)
+#014 – [Type ahead search](https://type-ahead-search.netlify.app/)
