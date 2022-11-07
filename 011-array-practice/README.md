@@ -17,3 +17,4 @@ Practice exercises with array methods.
 5. Sort the inventors by years lived;
 6. Sort the people alphabetically by last name;
 7. Map each object and sum how many times it appears in the list;
+
