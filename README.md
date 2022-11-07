@@ -22,3 +22,7 @@
 #009 – [Analog Clock](https://analog-clock-clock.netlify.app/)
 
 #010 – [CSS variables](https://css-variables-update-with-js.netlify.app/)
+
+#011 – [Array practice](https://array-practice-part1.netlify.app/)
+
+#012 – [Interactive split gallery](https://interactive-split-gallery.netlify.app/)
