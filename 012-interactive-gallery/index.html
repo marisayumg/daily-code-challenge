@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flex Panels 💪</title>
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap");
+
+      html {
+        box-sizing: border-box;
+        background: black;
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 20px;
+        font-weight: 200;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      .panels {
+        min-height: 100vh;
+        overflow: hidden;
+        display: flex;
+      }
+
+      .panel {
+        flex: 1;
+        background: rgba(0, 0, 0, 0.5);
+        background-blend-mode: overlay;
+        color: white;
+        text-align: center;
+        align-items: center;
+        /* Safari transitionend event.propertyName === flex */
+        /* Chrome + FF transitionend event.propertyName === flex-grow */
+        transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+          flex 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+          font-size 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+        font-size: 20px;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5;
+        cursor: pointer;
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .panel:hover {
+        opacity: 1;
+      }
+
+      .panel1 {
+        background-image: url(https://images.unsplash.com/photo-1547647496-b2d16f4fdb69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80);
+      }
+      .panel2 {
+        background-image: url(https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1794&q=80);
+      }
+      .panel3 {
+        background-image: url(https://images.unsplash.com/photo-1624253346805-df69ad2b3d7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+      }
+      .panel4 {
+        background-image: url(https://images.unsplash.com/photo-1584065485955-c1c04bdaf4d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+      }
+      .panel5 {
+        background-image: url(https://images.unsplash.com/photo-1504109586057-7a2ae83d1338?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2233&q=80);
+      }
+
+      /* Flex Children */
+      .panel > * {
+        margin: 0;
+        width: 100%;
+        transition: transform 0.5s;
+      }
+
+      .panel > *:first-child {
+        transform: translateY(-100%);
+      }
+
+      .panel > *:last-child {
+        transform: translateY(100%);
+      }
+
+      .panel p {
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-size: 0.5em;
+        line-height: 110%;
+      }
+
+      .panel p:nth-child(2) {
+        font-size: 8em;
+      }
+
+      .panel.open {
+        flex: 4;
+        font-size: 1.2em;
+      }
+    </style>
+
+    <div class="panels">
+      <div class="panel panel1">
+        <p>Osaka</p>
+        <p>大<br />阪</p>
+        <p>See city</p>
+      </div>
+      <div class="panel panel2">
+        <p>Tokyo</p>
+        <p>東<br />京</p>
+        <p>See city</p>
+      </div>
+      <div class="panel panel3">
+        <p>Kyoto</p>
+        <p>京<br />都</p>
+        <p>See city</p>
+      </div>
+      <div class="panel panel4">
+        <p>Sapporo</p>
+        <p>札<br />幌</p>
+        <p>See city</p>
+      </div>
+      <div class="panel panel5">
+        <p>Hiroshima</p>
+        <p>広島</p>
+        <p>See city</p>
+      </div>
+    </div>
+
+    <script>
+      const panels = document.querySelectorAll(".panel");
+
+      function toggleOpen() {
+        this.classList.toggle("open");
+      }
+
+      panels.forEach((panel) => panel.addEventListener("click", toggleOpen));
+    </script>
+  </body>
+</html>
