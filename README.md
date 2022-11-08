@@ -30,3 +30,6 @@
 #013 – [Interactive split gallery](https://interactive-split-gallery.netlify.app/)
 
 #014 – [Type ahead search](https://type-ahead-search.netlify.app/)
+
+#015 – [Checkbox list](https://checkbox-list-challenge.netlify.app/)
+
