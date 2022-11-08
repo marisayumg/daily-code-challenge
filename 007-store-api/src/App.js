@@ -44,6 +44,7 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
+    // can't use async directly in useEffect. Declare a separate function then call it here
     fetchData();
   }, []);
 
