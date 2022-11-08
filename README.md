@@ -33,7 +33,7 @@
 
 #015 – [Checkbox list](https://checkbox-list-challenge.netlify.app/)
 
-#016 – [Checkbox list](https://meme-generatooor.netlify.app/)
+#016 – [Meme Generator](https://meme-generatooor.netlify.app/)
 
 
 
