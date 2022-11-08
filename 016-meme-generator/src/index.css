@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poor Story", cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 3em;
+  font-size: 1rem;
+  background: black;
+  color: white;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+.App {
+  border: 2px solid white;
+  height: 100%;
+}
+
+header {
+  height: 64px;
+  background-color: black;
+  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.header--image {
+  height: 48px;
+}
+
+main {
+  width: 100%;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+.form {
+  max-width: 720px;
+  display: grid;
+  grid-template: 48px 48px / 1fr 1fr;
+  row-gap: 24px;
+  column-gap: 24px;
+  margin: 0 auto;
+}
+
+.form--input {
+  padding: 0 1rem;
+  font-size: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  background: transparent;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form--input:focus,
+.form--input:hover {
+  border: 2px solid rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  color: black;
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form--button:hover {
+  opacity: 0.8;
+}
+
+.meme {
+  position: relative;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.top {
+  top: 24px;
+}
+
+.bottom {
+  bottom: 24px;
+}
