@@ -1,7 +1,7 @@
 
 ## Checkbox list
 
-See this project [live here](https://analog-clock-clock.netlify.app/](https://checkbox-list-challenge.netlify.app/).
+See this project [live here](https://checkbox-list-challenge.netlify.app/).
 
 
 ## Description
