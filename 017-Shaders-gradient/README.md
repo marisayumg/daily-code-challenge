@@ -11,4 +11,5 @@ Using KodeLife, a real-time GPU shader editor) to create a gradient effect that'
 ## Requirements
 
 1. Use KodeLife and GLSL language;
-2. Create a gradient that moves over time.
+2. Create a gradient that moves over time;
+3. Use Glsl canvas to bring it into the web.
