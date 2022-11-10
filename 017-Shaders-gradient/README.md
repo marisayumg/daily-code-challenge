@@ -1,6 +1,6 @@
 ## Shaders for the Web: Gradients
 
-See this project [live here](...)
+See this project [live here](https://shaders1-gradient.netlify.app/)
 
 
 ## Description
