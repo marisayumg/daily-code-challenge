@@ -1,3 +1,3 @@
-## Shaders Zebra pattern
+## Shaders pattern test
 
 https://shaders-zebra.netlify.app/
