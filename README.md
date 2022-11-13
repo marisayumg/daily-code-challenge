@@ -38,3 +38,5 @@
 #017 – [Shaders1 Gradient](https://shaders1-gradient.netlify.app/)
 
 #018 – [Shaders2 Test pattern](https://shaders-zebra.netlify.app/)
+
+#019 – [Interactive slideshow](https://m-o-slideshow.netlify.app/)
