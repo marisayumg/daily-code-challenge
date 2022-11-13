@@ -1,7 +1,7 @@
 
 ## Interactive split gallery
 
-See this project [live here](interactive-split-gallery.netlify.app).
+See this project [live here](https://interactive-split-gallery.netlify.app/).
 
 
 ## Description
