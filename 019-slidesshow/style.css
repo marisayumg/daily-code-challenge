@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Recife";
+  src: url(fonts/RecifeDisplayWeb-Medium.woff);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Recife";
+  font-size: 1.4rem;
+  line-height: 110%;
+  background-color: #edc7a9;
+  background-image: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0));
+  height: 100vh;
+  width: 100vw;
+  transition: background-color 500ms;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 110%;
+}
+
+h2 {
+  font-size: 1.4rem;
+  line-height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.random {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  font-size: 64px;
+  cursor: pointer;
+  transition: transform 250ms ease-in-out;
+}
+
+.random:hover {
+  transform: rotate(30deg);
+}
+
+div.circle {
+  width: 24px;
+  height: 24px;
+  background-color: #3e78ed;
+  border-radius: 50%;
+  transition: background-color 500ms;
+}
+
+footer.controls {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+div.icon {
+  font-size: 4rem;
+  cursor: pointer;
+}
