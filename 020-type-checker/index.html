@@ -9,20 +9,34 @@
   </head>
   <body>
     <nav>
-      <h1>Type Checker</h1>
+      <h1>Type<br />Checker</h1>
       <div class="controls">
         <label for="sentence">Your text</label>
-        <input type="text" name="sentence" />
+        <input
+          type="text"
+          name="sentence"
+          placeholder="Amazingly few discothe..."
+        />
         <label for="typeface">Typeface</label>
+        <select name="typeface" id="typeface">
+          <option value="helvetica">Helvetica</option>
+          <option value="">B</option>
+          <option value="">C</option>
+        </select>
         <label for="size">Type size</label>
+        <input type="range" name="size" id="size" />
         <label for="weight">Font weight</label>
+        <input type="range" name="weight" id="weight" />
         <label for="leading">Leading</label>
+        <input type="range" name="leading" id="leading" />
         <label for="italic">Italic</label>
+        <input type="checkbox" name="italic" id="italic" />
         <label for="colours">Colours</label>
       </div>
     </nav>
     <main>
-      <h2>Amazingly few discotheques provide jukeboxes</h2>
+      <textarea>Amazingly few discotheques provide jukeboxes</textarea>
     </main>
   </body>
+  <script src="script.js"></script>
 </html>

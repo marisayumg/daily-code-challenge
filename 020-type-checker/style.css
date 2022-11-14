@@ -4,9 +4,71 @@
   padding: 0;
 }
 
+h1 {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 7rem;
+  line-height: 105%;
+}
+
 body {
   width: 100vw;
-  height: 100vh;
-  background-color: aquamarine;
   display: flex;
+  background-color: #f9ebcd;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+
+nav {
+  height: 100vh;
+  width: 240px;
+  position: fixed;
+  padding: 24px;
+  border-right: 1px solid black;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+}
+
+.controls label {
+  font-size: 0.9rem;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+select {
+  height: 40px;
+  background: white;
+  border: none;
+  padding: 0.8rem;
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline: 1px solid black;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+textarea {
+  width: 80%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 8rem;
+  line-height: 100%;
+  margin-left: 240px;
+  padding: 24px 40px;
 }
