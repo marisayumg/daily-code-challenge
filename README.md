@@ -33,12 +33,10 @@
 
 #015 – [Checkbox list](https://checkbox-list-challenge.netlify.app/)
 
-#016 – [Meme generator](https://meme-generatooor.netlify.app/)
+#016 – [Meme Generator](https://meme-generatooor.netlify.app/)
 
-#017 – [Shaders1 gradient](https://shaders1-gradient.netlify.app/)
+#017 – [Shaders1 Gradient](https://shaders1-gradient.netlify.app/)
 
-#018 – [Shaders2 test pattern](https://shaders-zebra.netlify.app/)
+#018 – [Shaders2 Test pattern](https://shaders-zebra.netlify.app/)
 
 #019 – [Interactive slideshow](https://m-o-slideshow.netlify.app/)
-
-#020 – [Type checker](https://mo-type-checker.netlify.app/)
