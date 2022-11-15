@@ -3,40 +3,42 @@
 
 # Challenges
 
-#001 - [Tenzies Game](https://mo-tenzies-game.netlify.app/)
+#001 – [Interactive slideshow](https://m-o-slideshow.netlify.app/)
 
-#002 - [Spinning Squares](https://mo-spinning-squares.netlify.app/)
+#002 - [Tenzies Game](https://mo-tenzies-game.netlify.app/)
 
-#003 - [Square Pattern](https://mo-square-pattern.netlify.app/)
+#003 – [Type Checker](https://mo-type-checker.netlify.app/)
 
-#004 - [Zipper](https://mo-zipper.netlify.app/)
+#004 – [Meme Generator](https://meme-generatooor.netlify.app/)
 
-#005 - [Random Line](https://mo-random-line.netlify.app/)
+#005 - [Drumkit](https://vanilla-drumkit.netlify.app/)
 
-#006 - [Moiré Effect](https://mo-moire-effect.netlify.app/)
+#006 – [Interactive split gallery](https://interactive-split-gallery.netlify.app/)
 
-#007 - [Fakestore API call](https://fakestore-api-test.netlify.app/)
+#007 - [Spinning Squares](https://mo-spinning-squares.netlify.app/)
 
-#008 - [Drumkit](https://vanilla-drumkit.netlify.app/)
+#008 - [Square Pattern](https://mo-square-pattern.netlify.app/)
 
-#009 – [Analog Clock](https://analog-clock-clock.netlify.app/)
+#009 - [Zipper](https://mo-zipper.netlify.app/)
 
-#010 – [CSS variables](https://css-variables-update-with-js.netlify.app/)
+#010 - [Random Line](https://mo-random-line.netlify.app/)
 
-#011 – [Array practice](https://array-practice-part1.netlify.app/)
+#011 - [Moiré Effect](https://mo-moire-effect.netlify.app/)
 
-#012 – [Array practice 2](https://array-practice-part2.netlify.app/)
+#012 - [Fakestore API call](https://fakestore-api-test.netlify.app/)
 
-#013 – [Interactive split gallery](https://interactive-split-gallery.netlify.app/)
+#013 – [Analog Clock](https://analog-clock-clock.netlify.app/)
 
-#014 – [Type ahead search](https://type-ahead-search.netlify.app/)
+#014 – [CSS variables](https://css-variables-update-with-js.netlify.app/)
 
-#015 – [Checkbox list](https://checkbox-list-challenge.netlify.app/)
+#015 – [Array practice](https://array-practice-part1.netlify.app/)
 
-#016 – [Meme Generator](https://meme-generatooor.netlify.app/)
+#016 – [Array practice 2](https://array-practice-part2.netlify.app/)
 
-#017 – [Shaders1 Gradient](https://shaders1-gradient.netlify.app/)
+#017 – [Type ahead search](https://type-ahead-search.netlify.app/)
 
-#018 – [Shaders2 Test pattern](https://shaders-zebra.netlify.app/)
+#018 – [Checkbox list](https://checkbox-list-challenge.netlify.app/)
 
-#019 – [Interactive slideshow](https://m-o-slideshow.netlify.app/)
+#019 – [Shaders1 Gradient](https://shaders1-gradient.netlify.app/)
+
+#020 – [Shaders2 Test pattern](https://shaders-zebra.netlify.app/)
