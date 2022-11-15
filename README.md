@@ -13,27 +13,27 @@
 
 #005 - [Drumkit](https://vanilla-drumkit.netlify.app/)
 
-#006 - [Spinning Squares](https://mo-spinning-squares.netlify.app/)
+#006 – [Interactive split gallery](https://interactive-split-gallery.netlify.app/)
 
-#007 - [Square Pattern](https://mo-square-pattern.netlify.app/)
+#007 - [Spinning Squares](https://mo-spinning-squares.netlify.app/)
 
-#008 - [Zipper](https://mo-zipper.netlify.app/)
+#008 - [Square Pattern](https://mo-square-pattern.netlify.app/)
 
-#009 - [Random Line](https://mo-random-line.netlify.app/)
+#009 - [Zipper](https://mo-zipper.netlify.app/)
 
-#010 - [Moiré Effect](https://mo-moire-effect.netlify.app/)
+#010 - [Random Line](https://mo-random-line.netlify.app/)
 
-#011 - [Fakestore API call](https://fakestore-api-test.netlify.app/)
+#011 - [Moiré Effect](https://mo-moire-effect.netlify.app/)
 
-#012 – [Analog Clock](https://analog-clock-clock.netlify.app/)
+#012 - [Fakestore API call](https://fakestore-api-test.netlify.app/)
 
-#013 – [CSS variables](https://css-variables-update-with-js.netlify.app/)
+#013 – [Analog Clock](https://analog-clock-clock.netlify.app/)
 
-#014 – [Array practice](https://array-practice-part1.netlify.app/)
+#014 – [CSS variables](https://css-variables-update-with-js.netlify.app/)
 
-#015 – [Array practice 2](https://array-practice-part2.netlify.app/)
+#015 – [Array practice](https://array-practice-part1.netlify.app/)
 
-#016 – [Interactive split gallery](https://interactive-split-gallery.netlify.app/)
+#016 – [Array practice 2](https://array-practice-part2.netlify.app/)
 
 #017 – [Type ahead search](https://type-ahead-search.netlify.app/)
 
