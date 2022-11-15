@@ -10,36 +10,87 @@
   <body>
     <nav>
       <h1>Type<br />Checker</h1>
-      <div class="controls">
-        <label for="sentence">Your text</label>
-        <input
-          type="text"
-          name="sentence"
-          placeholder="Amazingly few discothe..."
-        />
-        <label for="typeface">Typeface</label>
-        <select name="typeface" id="typeface">
-          <option value="helvetica">Helvetica</option>
-          <option value="">B</option>
-          <option value="">C</option>
-        </select>
-        <label for="size">Type size</label>
-        <input
-          type="range"
-          name="size"
-          id="size"
-          min="12"
-          max="200"
-          value="64"
-        />
-        <label for="weight">Font weight</label>
-        <input type="range" name="weight" id="weight" />
-        <label for="leading">Leading</label>
-        <input type="range" name="leading" id="leading" />
-        <label for="italic">Italic</label>
-        <input type="checkbox" name="italic" id="italic" />
-        <label for="colours">Colours</label>
-      </div>
+      <section class="controls">
+        <div class="option">
+          <label for="sentence">Your text</label>
+          <input
+            type="text"
+            name="sentence"
+            placeholder="Amazingly few discothe..."
+          />
+        </div>
+        <div class="option">
+          <label for="typeface">Typeface</label>
+          <select name="typeface" id="typeface">
+            <option value="Archivo">Archivo</option>
+            <option value="Noto Serif">Noto Serif</option>
+            <option value="Poppins">Poppins</option>
+          </select>
+        </div>
+        <div class="option">
+          <label for="size"
+            >Type size<span class="size-label">120px</span></label
+          >
+          <input
+            type="range"
+            name="size"
+            id="size"
+            min="12"
+            max="200"
+            value="120"
+          />
+        </div>
+        <div class="option">
+          <label for="weight"
+            >Font weight<span class="weight-label">400</span></label
+          >
+          <input
+            type="range"
+            name="weight"
+            id="weight"
+            min="100"
+            max="900"
+            value="400"
+            step="100"
+          />
+        </div>
+        <div class="option">
+          <label for="leading"
+            >Leading<span class="leading-label">1.5</span></label
+          >
+          <input
+            type="range"
+            name="leading"
+            id="leading"
+            min="0.75"
+            max="2.5"
+            value="1.5"
+            step="0.25"
+          />
+        </div>
+        <div class="option option-checkbox">
+          <label for="italic">Italic</label>
+          <input type="checkbox" name="italic" id="italic" />
+        </div>
+        <div class="option colours">
+          <label for="colours">Colours</label>
+          <div
+            class="colour selected"
+            style="background-color: #333; border: 1px solid #fff; color: #fff"
+          >
+            Aa
+          </div>
+          <div class="colour" style="background-color: #fff; color: #333">
+            Aa
+          </div>
+          <div class="colour" style="background-color: #d7d9d2; color: #333">
+            Aa
+          </div>
+          <div class="colour" style="background-color: #e1ed86; color: #333">
+            Aa
+          </div>
+        </div>
+      </section>
     </nav>
     <main>
       <textarea>Amazingly few discotheques provide jukeboxes</textarea>
