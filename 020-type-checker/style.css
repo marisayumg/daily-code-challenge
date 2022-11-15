@@ -38,6 +38,7 @@ nav {
   width: 240px;
   position: fixed;
   padding: 24px;
+  border-right: #d7d9d2;
 }
 
 main {
