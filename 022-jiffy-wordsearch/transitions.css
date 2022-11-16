@@ -1,0 +1,15 @@
+.video {
+  box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.68);
+}
+
+.visible:nth-of-type(2n) {
+  transform: scale(1) rotate(5deg);
+}
+
+.visible:nth-of-type(3n) {
+  transform: scale(1) rotate(-5deg);
+}
+
+.visible:nth-of-type(4n) {
+  transform: scale(1) rotate(7deg);
+}
