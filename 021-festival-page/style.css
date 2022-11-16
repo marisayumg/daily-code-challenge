@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@700&family=IBM+Plex+Sans:ital@0;1&display=swap");
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translate(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(-25deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(-25deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 140%;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "IBM Plex Sans JP", sans-serif;
+  font-size: 200px;
+  line-height: 100%;
+  animation: moveLeft 200s infinite;
+}
+
+h2 {
+  font-size: 1rem;
+  margin-bottom: 24px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url(assets/airam-dato-on-zFRn0okB5aw-unsplash.jpg);
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 24px;
+}
+
+nav {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  white-space: nowrap;
+  display: flex;
+  gap: 64px;
+  animation: marquee 15s linear infinite;
+  cursor: default;
+}
+
+nav:hover {
+  animation-play-state: paused;
+}
+
+.appear {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.delay {
+  animation-delay: 100ms;
+}
+
+div.intro {
+  max-width: 400px;
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+}
+
+div.reviews {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.review {
+  text-align: center;
+}
+
+div.review h3 {
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+div.review p {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Cast section */
+
+section.cast {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  padding: 80px;
+  overflow: hidden;
+}
+
+.cast a {
+  text-decoration: none;
+  color: black;
+  line-height: 110%;
+  cursor: default;
+  z-index: 2;
+}
+
+.cast a:hover:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+a.jiro:hover:after {
+  content: url(https://www.ft.com/__origami/service/image/v2/images/raw/https:%2F%2Fs3-eu-west-1.amazonaws.com%2Fhtsi-ez-prod%2Fez%2Fimages%2F4%2F8%2F7%2F9%2F1309784-1-eng-GB%2FGettyImages-171434849.jpg?width=608&format=jpg&dpr=2&source=htsi);
+}
+
+a.yoshikazu:hover:after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: url(https://www.tvguide.com/a/img/resize/b09e83d9a202aa2a3e7d0c5b6bd70576b2d4ae2a/catalog/provider/1/7/1-172546630.jpg?auto=webp&fit=crop&height=675&width=1200);
+}
+
+a.masuhiro:hover:after {
+  right: -50%;
+  content: url(https://foodsaketokyo.files.wordpress.com/2014/11/sukiyabashi-jiro.jpg?w=768&h=511);
+}
+
+a.daisuke:hover:after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: url(https://images-na.ssl-images-amazon.com/images/G/01/digital/video/hero/Movies/2012_NewFallTitles/JiroDreamsOfSushi_3872604100-10473MAG._V390531144_SX1080_.jpg);
+}
+
+.name-english {
+  font-size: 4rem;
+  z-index: 2;
+}
+
+.name-japanese {
+  z-index: 2;
+}
+
+img.sushi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 240px;
+  opacity: 0.1;
+  animation: rotation 10s linear infinite;
+  z-index: -10;
+}
+
+img.sushi:nth-of-type(2) {
+  left: 15%;
+  top: 70%;
+  animation-delay: 2s;
+}
+
+img.sushi:nth-of-type(3) {
+  left: 70%;
+  top: 10%;
+}
+
+img.sushi:nth-of-type(4) {
+  left: 80%;
+  top: 60%;
+  animation-delay: 2s;
+}
+
+img.sushi:nth-of-type(5) {
+  left: 20%;
+  top: 20%;
+}
+
+footer {
+  height: 80px;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+footer a {
+  color: white;
+}
+
+@media (max-width: 800px) {
+  div.reviews {
+    width: 80%;
+  }
+}
