@@ -1,7 +1,7 @@
 
 ## Jiffy wordsearch
 
-See this project [live here]()
+See this project [live here]().
 
 A word search that returns gif videos from Giphy's website.
 
