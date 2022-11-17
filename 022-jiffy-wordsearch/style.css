@@ -111,6 +111,9 @@ div.videos {
 }
 
 @media (max-width: 700px) {
+  body {
+    height: 90vh;
+  }
   div.videos {
     padding: 24px;
   }
