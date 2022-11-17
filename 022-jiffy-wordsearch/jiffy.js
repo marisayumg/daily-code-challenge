@@ -1,6 +1,7 @@
 const videoTag = document.querySelector("div.videos");
 const inputTag = document.querySelector(".search-input");
 const hintTag = document.querySelector(".search-hint");
+const clearTag = document.querySelector(".clear");
 
 const apiKey = "2FVfpM8e8ypEGjAGa8CSOMUIe7NIXOw9";
 
@@ -28,8 +29,11 @@ const createVideo = (src) => {
 const toggleLoading = (state) => {
   if (state) {
     document.body.classList.add("loading");
+    inputTag.disabled = true;
   } else {
     document.body.classList.remove("loading");
+    inputTag.disabled = false;
+    inputTag.focus();
   }
 };
 
@@ -74,6 +78,28 @@ const fetchVideo = (keyword) => {
       videoTag.appendChild(video);
     })
     .catch((error) => {
-      console.log(error);
+      toggleLoading(false);
+      document.body.classList.add("has-results");
+      hintTag.innerHTML = `No results for ${keyword}`;
     });
 };
+
+const clearSearch = () => {
+  // remove results state
+  document.body.classList.remove("has-results");
+  // empty videos div
+  videoTag.innerHTML = "";
+  // empty search hint text
+  hintTag.innerHTML = "Type any keyword";
+  // empty search input text
+  inputTag.value = "";
+  // focus on input again
+  inputTag.focus();
+};
+
+clearTag.addEventListener("click", clearSearch);
+document.addEventListener("keyup", (event) => {
+  if (event.key === "Escape") {
+    clearSearch();
+  }
+});
