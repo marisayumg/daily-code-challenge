@@ -44,3 +44,5 @@
 #020 – [Shaders2 Test pattern](https://shaders-zebra.netlify.app/)
 
 #021 – [Running banner](https://mo-jiro-dreams-of-sushi-page.netlify.app/)
+
+#022 - [Jiffy clips](https://mo-jiffy-clips.netlify.app/)
