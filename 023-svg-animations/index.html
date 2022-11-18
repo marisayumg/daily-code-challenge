@@ -4,8 +4,73 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/a-tachyons.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>SVG Animations</title>
   </head>
-  <body></body>
+  <body>
+    <main class="page min-vh-100 flex items-stretch">
+      <!-- First column -->
+      <div class="w-third flex flex-wrap">
+        <div class="h-50 w-100 bg-white flex">
+          <div class="h-100 w-25 bg-blue"></div>
+          <div class="h-100 w-25 bg-purple"></div>
+          <div class="h-100 w-25 bg-pink"></div>
+          <div class="h-100 w-25 bg-white"></div>
+        </div>
+        <div class="h-25 w-100 bg-purple"></div>
+        <div class="h-25 w-100 bg-blue"></div>
+      </div>
+      <!-- Second column -->
+      <div class="w-third flex flex-wrap">
+        <div class="h-25 w-100 bg-pink"></div>
+        <div class="h-25 w-100 bg-blue"></div>
+        <div class="h-50 w-100 bg-pink">
+          <svg
+            width="100%"
+            height="100%"
+            viewBox="0 0 400 400"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <g
+              id="Page-1"
+              stroke="#000"
+              stroke-width="10"
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <circle cx="200" cy="200" r="10%" />
+              <circle cx="200" cy="200" r="20%" />
+              <circle cx="200" cy="200" r="30%" />
+              <circle cx="200" cy="200" r="40%" />
+              <circle cx="200" cy="200" r="50%" />
+              <circle cx="200" cy="200" r="60%" />
+              <circle cx="200" cy="200" r="70%" />
+              <circle cx="200" cy="200" r="80%" />
+              <circle cx="200" cy="200" r="90%" />
+              <circle cx="200" cy="200" r="100%" />
+              <circle cx="200" cy="200" r="110%" />
+              <circle cx="200" cy="200" r="120%" />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <!-- Third column -->
+      <div class="w-third flex flex-wrap">
+        <div class="h-50 w-100 bg-purple"></div>
+        <div class="h-25 w-100 bg-white flex flex-wrap">
+          <div class="h-50 w-50 bg-white"></div>
+          <div class="h-50 w-50 bg-blue"></div>
+          <div class="h-50 w-50 bg-pink"></div>
+          <div class="h-50 w-50 bg-purple"></div>
+        </div>
+        <div class="h-25 w-100 bg-purple"></div>
+      </div>
+    </main>
+  </body>
 </html>
