@@ -9,3 +9,7 @@ body {
   color: white;
   font-size: 40px;
 }
+
+circle {
+  transform-origin: center;
+}
