@@ -14,7 +14,8 @@ body {
 }
 
 circle,
-#crosses path {
+#crosses path,
+#squares rect {
   transform-origin: center;
 }
 
@@ -39,4 +40,5 @@ circle,
 
 #squares rect {
   transform: translate(-50%, -50%);
+  transform-box: fill-box;
 }

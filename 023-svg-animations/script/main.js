@@ -79,11 +79,25 @@ duplicateHtml(document.querySelector("#dots"), 40);
 
 dots.forEach((dot) => {
   anime({
-    target: dot,
+    targets: dot,
     rotate: (el, i) => anime.random(90, 360),
     duration: (el, i) => anime.random(270, 750),
     loop: true,
     easing: "easeInOutSine",
     direction: "alternate",
   });
+});
+
+// SQUARE TUNNEL
+
+anime({
+  targets: "#squares rect",
+  translateX: ["-50%", "-50%"],
+  translateY: ["-50%", "-50%"],
+  rotate: [45, 0, -45],
+  delay: (el, i) => 100 * i,
+  duration: (el, i) => 750,
+  loop: true,
+  easing: "easeInOutSine",
+  direction: "alternate",
 });
