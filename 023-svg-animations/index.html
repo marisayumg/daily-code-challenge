@@ -11,21 +11,89 @@
   <body>
     <main class="page min-vh-100 flex items-stretch">
       <!-- First column -->
-      <div class="w-third flex flex-wrap">
-        <div class="h-50 w-100 bg-white flex">
-          <div class="h-100 w-25 bg-blue"></div>
-          <div class="h-100 w-25 bg-purple"></div>
-          <div class="h-100 w-25 bg-pink"></div>
-          <div class="h-100 w-25 bg-white"></div>
+      <div class="w-third flex flex-wrap box">
+        <!-- LINES -->
+        <div class="h-50 w-100 bg-black conveyor-belt box overflow-hidden">
+          <div class="h-100 w-200 conveyor flex items-stretch box">
+            <div class="h-100 w-25 box"></div>
+            <div class="h-100 w-25 box"></div>
+            <div class="h-100 w-25 box"></div>
+            <div class="h-100 w-25 box"></div>
+            <div class="h-100 w-25 box"></div>
+            <div class="h-100 w-25 box"></div>
+            <div class="h-100 w-25 box"></div>
+            <div class="h-100 w-25 box"></div>
+          </div>
+          <!-- WAVE -->
         </div>
-        <div class="h-25 w-100 bg-purple"></div>
-        <div class="h-25 w-100 bg-blue"></div>
+        <div class="h-25 w-100 bg-white box" id="wave">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="100%"
+            height="100%"
+            viewBox="0 0 988 97"
+            version="1.1"
+          >
+            <g
+              id="Page-1"
+              stroke="#000"
+              stroke-width="16px"
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <path
+                d="M0,26.6660909 C12.4883576,26.6660909 19.222048,32.9380569 33.6965149,55.4085289 C42.7346868,69.4395802 47.113107,75.4370181 54.0606047,81.9082332 C64.1356961,91.2926314 75.8316529,96.3765857 89.8087275,96.3765857 C103.786637,96.3765857 115.483245,91.2924788 125.558911,81.9077498 C132.50679,75.4363207 136.885127,69.4391244 145.923176,55.4086804 C160.398343,32.9377877 167.131785,26.6660909 179.620122,26.6660909 C192.108158,26.6660909 198.84173,32.9376735 213.316498,55.4072796 C222.355505,69.4387937 226.734418,75.4365175 233.682717,81.907992 C243.75878,91.2925892 255.455814,96.3765857 269.434182,96.3765857 C283.412589,96.3765857 295.109765,91.2930071 305.186188,81.9090404 C312.134843,75.4379001 316.514052,69.4404507 325.552809,55.41099 C340.031281,32.9383038 346.766436,26.6660909 359.258909,26.6660909 C371.746946,26.6660909 378.480518,32.9376735 392.955286,55.4072796 C401.994293,69.4387937 406.373206,75.4365175 413.321505,81.907992 C423.397568,91.2925892 435.094602,96.3765857 449.07297,96.3765857 C463.051782,96.3765857 474.749223,91.2927145 484.82573,81.9082611 C491.774414,75.4368116 496.15359,69.4390839 505.192125,55.4091349 C519.668896,32.9377558 526.402956,26.6660909 538.892364,26.6660909 C551.383465,26.6660909 558.118132,32.9382215 572.594602,55.4091349 C581.633831,69.4401606 586.012777,75.4376061 592.961046,81.9087714 C603.037025,91.2928819 614.733795,96.3765857 628.711758,96.3765857 C642.690112,96.3765857 654.387126,91.2926041 664.463236,81.9080189 C671.4115,75.4366148 675.7901,69.4394147 684.828678,55.4089834 C699.304847,32.9378699 706.038777,26.6660909 718.528485,26.6660909 C731.019566,26.6660909 737.753983,32.9379522 752.231155,55.4092864 C761.270261,69.4397049 765.649123,75.4369088 772.597774,81.908288 C782.674327,91.2927293 794.371748,96.3765857 808.350546,96.3765857 C822.328953,96.3765857 834.026129,91.2930071 844.102552,81.9090404 C851.051207,75.4379001 855.430415,69.4404507 864.469173,55.41099 C878.947645,32.9383038 885.6828,26.6660909 898.175273,26.6660909 C910.667746,26.6660909 917.402901,32.9383038 931.880373,55.4094379 C940.92013,69.4404507 945.299339,75.4379001 952.247994,81.9090404 C962.324417,91.2930071 974.021593,96.3765857 988,96.3765857"
+              />
+            </g>
+          </svg>
+        </div>
+        <!-- CROSSES -->
+        <div class="h-25 w-100 bg-black flex flex-wrap box" id="crosses">
+          <div class="w-20 h-50 flex items-center justify-center" id="cross">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="44px"
+              height="44px"
+              viewBox="0 0 44 44"
+              version="1.1"
+            >
+              <defs />
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <path
+                  d="M27.0904556,27.0904556 L44,27.0904556 L44,16.909748 L27.0904556,16.909748 L27.0904556,0 L16.909748,0 L16.909748,16.909748 L0,16.909748 L0,27.0904556 L16.909748,27.0904556 L16.909748,44 L27.0904556,44 L27.0904556,27.0904556 Z"
+                  id="Combined-Shape"
+                  fill="#fff"
+                  fill-rule="nonzero"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
       </div>
       <!-- Second column -->
-      <div class="w-third flex flex-wrap">
-        <div class="h-25 w-100 bg-pink"></div>
-        <div class="h-25 w-100 bg-blue"></div>
-        <div class="h-50 w-100 bg-white" id="tunnel">
+      <div class="w-third flex flex-wrap box">
+        <!-- TITLE -->
+        <div class="h-25 w-100 bg-black box flex justify-center items-center">
+          SVG ANIMATIONS
+        </div>
+        <!-- DOTS -->
+        <div
+          class="h-25 w-100 bg-white flex flex-wrap justify-around items-center pa3 box"
+          id="dots"
+        >
+          <div class="w-10">
+            <div class="dot center"></div>
+          </div>
+        </div>
+        <div class="h-50 w-100 bg-black box" id="tunnel">
           <svg
             width="100%"
             height="100%"
@@ -34,13 +102,11 @@
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
           >
-            <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-            <desc>Created with Sketch.</desc>
             <defs></defs>
             <g
               id="Page-1"
-              stroke="#000"
-              stroke-width="10"
+              stroke="#fff"
+              stroke-width="8"
               fill="none"
               fill-rule="evenodd"
             >
@@ -61,15 +127,54 @@
         </div>
       </div>
       <!-- Third column -->
-      <div class="w-third flex flex-wrap">
-        <div class="h-50 w-100 bg-purple"></div>
-        <div class="h-25 w-100 bg-white flex flex-wrap">
-          <div class="h-50 w-50 bg-white"></div>
-          <div class="h-50 w-50 bg-blue"></div>
-          <div class="h-50 w-50 bg-pink"></div>
-          <div class="h-50 w-50 bg-purple"></div>
+      <div class="w-third flex flex-wrap box">
+        <!-- ZIGZAG -->
+        <div class="h-50 w-100 bg-black pa3 box" id="zigzag">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="100%"
+            height="100%"
+            viewBox="0 0 498 495"
+            version="1.1"
+          >
+            <defs />
+            <g
+              id="Page-1"
+              stroke="none"
+              stroke-width="1"
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <path
+                stroke="#fff"
+                stroke-width="8"
+                d="M497.603 4.993 1 24.357 497.603 43.719 1 63.083 497.603 82.449 1 101.814 497.603 121.177 1 140.541 497.603 159.906 1 179.271 497.603 198.638 1 218.004 497.603 237.37 1 256.736 497.603 276.098 1 295.462 497.603 314.83 1 334.194 497.603 353.56 1 372.927 497.603 392.296 1 411.665 497.603 431.034 1 450.404 497.603 469.777 1 489.149"
+              />
+            </g>
+          </svg>
         </div>
-        <div class="h-25 w-100 bg-purple"></div>
+        <!-- SQUARES -->
+        <div class="h-50 w-100 bg-white box" id="squares">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="100%"
+            height="100%"
+            viewBox="0 0 200 200"
+            version="1.1"
+          >
+            <defs />
+            <g stroke="#000" stroke-width="8px" fill="none" fillRule="evenodd">
+              <rect height="25%" width="25%" x="50%" y="50%" />
+              <rect height="50%" width="50%" x="50%" y="50%" />
+              <rect height="75%" width="75%" x="50%" y="50%" />
+              <rect height="100%" width="100%" x="50%" y="50%" />
+              <rect height="125%" width="125%" x="50%" y="50%" />
+              <rect height="150%" width="125%" x="50%" y="50%" />
+            </g>
+          </svg>
+        </div>
       </div>
     </main>
   </body>
