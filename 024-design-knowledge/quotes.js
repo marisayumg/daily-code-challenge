@@ -1,6 +1,7 @@
 const quoteTag = document.querySelector("h1");
 const authorTag = document.querySelector("h2");
 const randomTag = document.querySelector("button");
+const bodyTag = document.querySelector("body");
 
 let quotesData = [];
 
@@ -15,6 +16,7 @@ const getQuote = () => {
   if (quotesData.length > 0) {
     const randomNumber = Math.floor(Math.random() * quotesData.length);
     const randomQuote = quotesData[randomNumber];
+    // update quotes
     quoteTag.innerHTML = "&ldquo;" + randomQuote.quote + "&rdquo;";
     authorTag.innerHTML = "&mdash; " + randomQuote.author;
     // make quotes smaller if too long
@@ -23,6 +25,7 @@ const getQuote = () => {
     } else {
       quoteTag.classList.remove("long");
     }
+    bodyTag.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 90%)`;
   } else {
     quoteTag.innerHTML = "Loading quotes...";
     authorTag.innerHTML = "";

@@ -20,12 +20,12 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 2vw 16vw 2vw 3.5vw;
-  background-color: #ff99fe;
+  transition: background-color 1s;
 }
 
 h1 {
   font-family: "Bluu", Helvetica, sans-serif;
-  font-size: 6vw;
+  font-size: 5vw;
   line-height: 100%;
   margin-bottom: 3vw;
   text-indent: -0.4em;
