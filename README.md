@@ -48,3 +48,5 @@
 #022 - [Jiffy clips](https://mo-jiffy-clips.netlify.app/)
 
 #023 - [SVG animations](https://mo-svg-animations.netlify.app/)
+
+#024 - [Designer quotes](https://mo-designer-quotes.netlify.app/)
