@@ -1,7 +1,7 @@
 # 365-code-challenge
 1 coding challenge a day. Each need to have a link to output and description. Let's go!
 
-Here are some highlights by topic:
+# Highlights by topic
 
 ### API 
 #026 - [Uova contentful](https://mo-uova-contentful.netlify.app/)
@@ -12,7 +12,7 @@ Here are some highlights by topic:
 #011 - [Moiré Effect](https://mo-moire-effect.netlify.app/)
 
 
-# Challenges
+# All challenges
 
 #001 – [Interactive slideshow](https://m-o-slideshow.netlify.app/)
 
