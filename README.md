@@ -50,3 +50,5 @@
 #023 - [SVG animations](https://mo-svg-animations.netlify.app/)
 
 #024 - [Designer quotes](https://mo-designer-quotes.netlify.app/)
+
+#025 - [Coin price](https://mo-coin-price.netlify.app/)
