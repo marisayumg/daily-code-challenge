@@ -3,6 +3,13 @@
   src: url(assets/bluunext.woff2), url(assets/bluunext.woff);
 }
 
+@font-face {
+  font-family: "Bluu";
+  font-style: italic;
+  src: url(assets/bluunext-bolditalic-webfont.woff2),
+    url(assets/bluunext-bolditalic-webfont.woff);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,21 +19,27 @@
 body {
   width: 100vw;
   height: 100vh;
-  padding: 2vw;
-  padding-right: 20vw;
+  padding: 2vw 16vw 2vw 3.5vw;
   background-color: #ff99fe;
 }
 
 h1 {
   font-family: "Bluu", Helvetica, sans-serif;
-  font-size: 4vw;
+  font-size: 6vw;
+  line-height: 100%;
   margin-bottom: 3vw;
+  text-indent: -0.4em;
+}
+
+h2 {
+  font-style: italic;
 }
 
 button {
   width: 104px;
   height: 104px;
   background: none;
+  outline: none;
   border: 2px solid black;
   border-radius: 50%;
   position: fixed;
@@ -34,10 +47,19 @@ button {
   bottom: 2vw;
   font-size: 32px;
   line-height: 100%;
+  cursor: pointer;
 }
 
-button:hover,
-button:focus {
+button:hover {
   background-color: black;
   color: white;
+}
+
+button:focus {
+  border: 3px solid black;
+}
+
+h1.long {
+  font-size: 4vw;
+  line-height: 110%;
 }
