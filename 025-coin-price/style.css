@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #000;
+  color: #fff;
+}
+
+h1 {
+  font-size: 28vmin;
+  font-weight: 400;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav a.selected {
+  color: #fff;
+}
