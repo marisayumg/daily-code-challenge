@@ -7,9 +7,9 @@
 
 API: [Uova contentful](https://mo-uova-contentful.netlify.app/) / [Jiffy clips](https://mo-jiffy-clips.netlify.app/)
 
-Animation: [Zipper](https://mo-zipper.netlify.app/) / [Moiré Effect](https://mo-moire-effect.netlify.app/)
+Animation: [Moiré Effect](https://mo-moire-effect.netlify.app/) / [Zipper](https://mo-zipper.netlify.app/)
 
-React: Coming soon
+React: [Tenzies Game](https://mo-tenzies-game.netlify.app/)
 
 Python: Coming soon
 
