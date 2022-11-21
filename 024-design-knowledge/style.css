@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Bluu";
+  src: url(assets/bluunext.woff2), url(assets/bluunext.woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 2vw;
+  padding-right: 20vw;
+  background-color: #ff99fe;
+}
+
+h1 {
+  font-family: "Bluu", Helvetica, sans-serif;
+  font-size: 4vw;
+  margin-bottom: 3vw;
+}
+
+button {
+  width: 104px;
+  height: 104px;
+  background: none;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: fixed;
+  right: 2vw;
+  bottom: 2vw;
+  font-size: 32px;
+  line-height: 100%;
+}
+
+button:hover,
+button:focus {
+  background-color: black;
+  color: white;
+}
