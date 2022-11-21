@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Lateef:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 75%;
+  font-family: "Lateef", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 110%;
+  background-color: #f9f0de;
+  color: #1f2839;
+}
+
+h1 {
+  font-size: 144px;
+  font-weight: 400;
+  line-height: 100%;
+  border-bottom: 1px solid #c2beb5;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 25%;
+  background-image: url(assets/sidebar.jpg);
+  background-size: cover;
+  background-position: 80% 50%;
+  z-index: -1;
+}
+
+main {
+  padding: 40px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section.menu {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 64px 32px;
+  margin: 64px 0;
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  margin: 24px 0 16px 0;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-top: 1px solid #c2beb5;
+}
