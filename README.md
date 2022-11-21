@@ -52,3 +52,5 @@
 #024 - [Designer quotes](https://mo-designer-quotes.netlify.app/)
 
 #025 - [Coin price](https://mo-coin-price.netlify.app/)
+
+#026 - [Uova contentful](https://mo-uova-contentful.netlify.app/)
