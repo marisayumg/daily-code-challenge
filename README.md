@@ -7,7 +7,7 @@
 
 API: [Uova contentful](https://mo-uova-contentful.netlify.app/) / [Jiffy clips](https://mo-jiffy-clips.netlify.app/)
 
-Animation: [Moiré Effect](https://mo-moire-effect.netlify.app/) / [Zipper](https://mo-zipper.netlify.app/)
+Animation: [Moiré Effect](https://mo-moire-effect.netlify.app/) / [Zipper](https://mo-zipper.netlify.app/) / [Square Pattern](https://mo-square-pattern.netlify.app/)
 
 React: [Tenzies Game](https://mo-tenzies-game.netlify.app/)
 
