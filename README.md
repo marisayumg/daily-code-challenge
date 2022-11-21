@@ -1,6 +1,17 @@
 # 365-code-challenge
 1 coding challenge a day. Each need to have a link to output and description. Let's go!
 
+Here are some highlights by topic:
+
+API 
+#026 - [Uova contentful](https://mo-uova-contentful.netlify.app/)
+#022 - [Jiffy clips](https://mo-jiffy-clips.netlify.app/)
+
+Animation
+#009 - [Zipper](https://mo-zipper.netlify.app/)
+#011 - [Moiré Effect](https://mo-moire-effect.netlify.app/)
+
+
 # Challenges
 
 #001 – [Interactive slideshow](https://m-o-slideshow.netlify.app/)
