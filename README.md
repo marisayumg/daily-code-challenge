@@ -5,13 +5,13 @@
 
 ### Highlights by topic
 
-API: [Uova contentful](https://mo-uova-contentful.netlify.app/) / [Jiffy clips](https://mo-jiffy-clips.netlify.app/)
+API: [Uova Contentful](https://mo-uova-contentful.netlify.app/) / [Jiffy Clips](https://mo-jiffy-clips.netlify.app/)
 
 Animation: [Moiré Effect](https://mo-moire-effect.netlify.app/) / [Zipper](https://mo-zipper.netlify.app/) / [Square Pattern](https://mo-square-pattern.netlify.app/)
 
 React: [Tenzies Game](https://mo-tenzies-game.netlify.app/)
 
-WebGL: [Shaders](https://shaders1-gradient.netlify.app/)
+WebGL: [Shaders Gradient](https://shaders1-gradient.netlify.app/)
 
 Datavis: Coming soon
 
@@ -68,4 +68,6 @@ Datavis: Coming soon
 
 #025 - [Coin price](https://mo-coin-price.netlify.app/)
 
-#026 - [Uova contentful](https://mo-uova-contentful.netlify.app/)
+#026 - [Contenful API](https://mo-uova-contentful.netlify.app/)
+
+#027 - [Unsplash search]()
