@@ -11,7 +11,7 @@ Animation: [Moiré Effect](https://mo-moire-effect.netlify.app/) / [Zipper](http
 
 React: [Tenzies Game](https://mo-tenzies-game.netlify.app/)
 
-Python: Coming soon
+WebGL: [Shaders](https://shaders1-gradient.netlify.app/)
 
 Datavis: Coming soon
 
