@@ -54,7 +54,7 @@ Datavis: Coming soon
 
 #018 – [JS: Checkbox list](https://checkbox-list-challenge.netlify.app/)
 
-#019 – [JS: Shaders1 Gradient](https://shaders1-gradient.netlify.app/)
+#019 – [WebGL: Shaders1 Gradient](https://shaders1-gradient.netlify.app/)
 
 #020 – [WebGL: Shaders2 Test pattern](https://shaders-zebra.netlify.app/)
 
