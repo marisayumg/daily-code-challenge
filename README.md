@@ -56,7 +56,7 @@ Datavis: Coming soon
 
 #019 – [WebGL: Shaders1 Gradient](https://shaders1-gradient.netlify.app/)
 
-#020 – [WebGL: Shaders2 Test pattern](https://shaders-zebra.netlify.app/)
+#020 – [WebGL: Shaders2 test pattern](https://shaders-zebra.netlify.app/)
 
 #021 – [CSS: Running Banner](https://mo-jiro-dreams-of-sushi-page.netlify.app/)
 
