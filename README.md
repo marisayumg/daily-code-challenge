@@ -58,16 +58,16 @@ Datavis: Coming soon
 
 #020 – [WebGL: Shaders2 Test pattern](https://shaders-zebra.netlify.app/)
 
-#021 – [CSS: Running banner](https://mo-jiro-dreams-of-sushi-page.netlify.app/)
+#021 – [CSS: Running Banner](https://mo-jiro-dreams-of-sushi-page.netlify.app/)
 
-#022 - [API: Jiffy clips](https://mo-jiffy-clips.netlify.app/)
+#022 - [API: Jiffy Clips](https://mo-jiffy-clips.netlify.app/)
 
-#023 - [CSS: SVG animations](https://mo-svg-animations.netlify.app/)
+#023 - [CSS: SVG Animations](https://mo-svg-animations.netlify.app/)
 
-#024 - [API: Designer quotes](https://mo-designer-quotes.netlify.app/)
+#024 - [API: Designer Quotes](https://mo-designer-quotes.netlify.app/)
 
-#025 - [API: Coin price](https://mo-coin-price.netlify.app/)
+#025 - [API: Coin Price](https://mo-coin-price.netlify.app/)
 
-#026 - [API: Contenful API](https://mo-uova-contentful.netlify.app/)
+#026 - [API: Uova Contenful](https://mo-uova-contentful.netlify.app/)
 
-#027 - [API: Unsplash search]()
+#027 - [API: Unsplash Search]()
