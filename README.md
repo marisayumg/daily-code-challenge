@@ -52,7 +52,7 @@ Datavis: Coming soon
 
 #017 – [JS: Type ahead search](https://type-ahead-search.netlify.app/)
 
-#018 – [Checkbox list](https://checkbox-list-challenge.netlify.app/)
+#018 – [JS: Checkbox list](https://checkbox-list-challenge.netlify.app/)
 
 #019 – [JS: Shaders1 Gradient](https://shaders1-gradient.netlify.app/)
 
