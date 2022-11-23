@@ -13,7 +13,7 @@ Vanilla JS: [Type Checker](https://mo-type-checker.netlify.app/) / [Running Bann
 
 Animation: [Moiré Effect](https://mo-moire-effect.netlify.app/) / [Zipper](https://mo-zipper.netlify.app/) / [Square Pattern](https://mo-square-pattern.netlify.app/)
 
-WebGL: [Shaders Gradient](https://shaders1-gradient.netlify.app/) / [WebGL: Shaders2 test pattern](https://shaders-zebra.netlify.app/)
+WebGL: [Shaders Gradient](https://shaders1-gradient.netlify.app/) / [Shaders2 test pattern](https://shaders-zebra.netlify.app/)
 
 Datavis: Coming soon
 
