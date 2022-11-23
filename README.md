@@ -17,7 +17,7 @@ WebGL: [Shaders Gradient](https://shaders1-gradient.netlify.app/) / [WebGL: Shad
 
 Datavis: Coming soon
 
-Python: Coming soon
+
 
 
 # All challenges
