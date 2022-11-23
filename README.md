@@ -5,15 +5,19 @@
 
 ### Highlights by topic
 
+React: [Tenzies Game](https://mo-tenzies-game.netlify.app/) / [Meme Generator](https://meme-generatooor.netlify.app/) / [React Gallery](https://mo-react-gallery.netlify.app/)
+
 API: [Uova Contentful](https://mo-uova-contentful.netlify.app/) / [Jiffy Clips](https://mo-jiffy-clips.netlify.app/)
+
+Vanilla JS: [JS: Type Checker](https://mo-type-checker.netlify.app/) / [CSS: Running Banner](https://mo-jiro-dreams-of-sushi-page.netlify.app/) / [JS: Drumkit](https://vanilla-drumkit.netlify.app/)
 
 Animation: [Moiré Effect](https://mo-moire-effect.netlify.app/) / [Zipper](https://mo-zipper.netlify.app/) / [Square Pattern](https://mo-square-pattern.netlify.app/)
 
-React: [Tenzies Game](https://mo-tenzies-game.netlify.app/) / [Meme Generator](https://meme-generatooor.netlify.app/) / [React Gallery](https://mo-react-gallery.netlify.app/)
-
-WebGL: [Shaders Gradient](https://shaders1-gradient.netlify.app/)
+WebGL: [Shaders Gradient](https://shaders1-gradient.netlify.app/) / [WebGL: Shaders2 test pattern](https://shaders-zebra.netlify.app/)
 
 Datavis: Coming soon
+
+Python: Coming soon
 
 
 # All challenges
