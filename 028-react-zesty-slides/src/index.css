@@ -16,14 +16,15 @@ body {
 }
 
 h1 {
-  font-size: 10vw;
+  font-size: clamp(6.5rem, 5.6768rem + 3.5122vw, 8.75rem);
+  line-height: 100%;
   font-weight: 300;
-  letter-spacing: -0.7rem;
+  letter-spacing: -10px;
   color: black;
 }
 
 h2 {
-  font-size: 1.5vw;
+  font-size: 24px;
   font-weight: 300;
 }
 
@@ -31,18 +32,22 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
-.App {
+span {
+  font-style: italic;
+}
+
+main {
   height: 100vh;
   display: flex;
 }
 
-.App > div {
-  flex: 1;
-}
-
-div.title {
+header {
+  width: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -51,7 +56,81 @@ div.title {
   text-align: left;
 }
 
-div.gallery {
+figure {
+  margin: 0;
+  position: relative;
+  width: 50vw;
+}
+
+figcaption {
+  width: 50%;
+  position: fixed;
+  text-align: center;
+  margin: 0 auto;
+  bottom: 0;
+  font-size: 24px;
+  color: #fef5ee;
+  z-index: 1;
+  padding: 2vw;
+}
+
+aside {
   width: 100%;
   height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background-color: #fef5ee;
+  color: black;
+  border-left: 1px solid black;
+  z-index: 2;
+}
+
+progress {
+  border: 1px solid black;
+  height: 16px;
+  width: 400px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background: #fef5ee;
+}
+
+progress[value]::-webkit-progress-value {
+  background: black;
+}
+
+.display {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
+
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
+
+  header {
+    width: 100vw;
+    height: 240px;
+    padding: 16px;
+  }
+
+  figure {
+    flex-grow: 1;
+    width: 100vw;
+  }
+
+  figcaption {
+    width: 100vw;
+    text-align: left;
+    margin: 0;
+    padding: 16px;
+  }
 }
