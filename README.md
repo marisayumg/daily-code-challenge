@@ -9,7 +9,7 @@ React: [Tenzies Game](https://mo-tenzies-game.netlify.app/) / [Meme Generator](h
 
 API: [Uova Contentful](https://mo-uova-contentful.netlify.app/) / [Jiffy Clips](https://mo-jiffy-clips.netlify.app/)
 
-Vanilla JS: [JS: Type Checker](https://mo-type-checker.netlify.app/) / [CSS: Running Banner](https://mo-jiro-dreams-of-sushi-page.netlify.app/) / [JS: Drumkit](https://vanilla-drumkit.netlify.app/)
+Vanilla JS: [Type Checker](https://mo-type-checker.netlify.app/) / [Running Banner](https://mo-jiro-dreams-of-sushi-page.netlify.app/) / [Drumkit](https://vanilla-drumkit.netlify.app/)
 
 Animation: [Moiré Effect](https://mo-moire-effect.netlify.app/) / [Zipper](https://mo-zipper.netlify.app/) / [Square Pattern](https://mo-square-pattern.netlify.app/)
 
