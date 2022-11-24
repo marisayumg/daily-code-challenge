@@ -7,7 +7,7 @@
 
 React: [Tenzies Game](https://mo-tenzies-game.netlify.app/) / [React Gallery](https://mo-react-gallery.netlify.app/) / [Album cover](https://mo-jigsaw-album-cover.netlify.app/)
 
-API: [Uova Contentful](https://mo-uova-contentful.netlify.app/) / [Jiffy Clips](https://mo-jiffy-clips.netlify.app/) / [API: Designer Quotes](https://mo-designer-quotes.netlify.app/)
+API: [Uova Contentful](https://mo-uova-contentful.netlify.app/) / [Jiffy Clips](https://mo-jiffy-clips.netlify.app/) / [Designer Quotes](https://mo-designer-quotes.netlify.app/)
 
 Vanilla JS: [Type Checker](https://mo-type-checker.netlify.app/) / [Running Banner](https://mo-jiro-dreams-of-sushi-page.netlify.app/) / [Drumkit](https://vanilla-drumkit.netlify.app/)
 
