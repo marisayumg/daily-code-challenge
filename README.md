@@ -77,3 +77,5 @@ Datavis: Coming soon
 #027 - [API: Unsplash Search](https://mo-photo-search.netlify.app/)
 
 #028 - [React: Mushroom Photography](https://mo-react-gallery.netlify.app/)
+
+#029 - [React: Album Cover](https://mo-jigsaw-album-cover.netlify.app/)
