@@ -5,15 +5,15 @@
 
 ### Highlights by topic
 
-React: [Tenzies Game](https://mo-tenzies-game.netlify.app/) / [Meme Generator](https://meme-generatooor.netlify.app/) / [React Gallery](https://mo-react-gallery.netlify.app/)
+React: [Tenzies Game](https://mo-tenzies-game.netlify.app/) / [React Gallery](https://mo-react-gallery.netlify.app/) / [Album cover](https://mo-jigsaw-album-cover.netlify.app/)
 
-API: [Uova Contentful](https://mo-uova-contentful.netlify.app/) / [Jiffy Clips](https://mo-jiffy-clips.netlify.app/)
+API: [Uova Contentful](https://mo-uova-contentful.netlify.app/) / [Jiffy Clips](https://mo-jiffy-clips.netlify.app/) / [Designer Quotes](https://mo-designer-quotes.netlify.app/)
 
 Vanilla JS: [Type Checker](https://mo-type-checker.netlify.app/) / [Running Banner](https://mo-jiro-dreams-of-sushi-page.netlify.app/) / [Drumkit](https://vanilla-drumkit.netlify.app/)
 
 Animation: [Moiré Effect](https://mo-moire-effect.netlify.app/) / [Zipper](https://mo-zipper.netlify.app/) / [Square Pattern](https://mo-square-pattern.netlify.app/)
 
-WebGL: [Shaders Gradient](https://shaders1-gradient.netlify.app/) / [WebGL: Shaders2 test pattern](https://shaders-zebra.netlify.app/)
+WebGL: [Shaders Gradient](https://shaders1-gradient.netlify.app/) / [Shaders2 test pattern](https://shaders-zebra.netlify.app/)
 
 Datavis: Coming soon
 
@@ -77,3 +77,5 @@ Datavis: Coming soon
 #027 - [API: Unsplash Search](https://mo-photo-search.netlify.app/)
 
 #028 - [React: Mushroom Photography](https://mo-react-gallery.netlify.app/)
+
+#029 - [React: Album Cover](https://mo-jigsaw-album-cover.netlify.app/)
