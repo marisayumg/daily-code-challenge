@@ -5,7 +5,7 @@
 
 ### Highlights by topic
 
-React: [Tenzies Game](https://mo-tenzies-game.netlify.app/) / [Meme Generator](https://meme-generatooor.netlify.app/) / [React Gallery](https://mo-react-gallery.netlify.app/) / [Album cover](https://mo-jigsaw-album-cover.netlify.app/)
+React: [Tenzies Game](https://mo-tenzies-game.netlify.app/) / [React Gallery](https://mo-react-gallery.netlify.app/) / [Album cover](https://mo-jigsaw-album-cover.netlify.app/)
 
 API: [Uova Contentful](https://mo-uova-contentful.netlify.app/) / [Jiffy Clips](https://mo-jiffy-clips.netlify.app/)
 
