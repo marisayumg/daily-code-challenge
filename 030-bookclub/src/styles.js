@@ -9,6 +9,8 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: black;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: white;
   }
 `;

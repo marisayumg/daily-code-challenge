@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { GlobalStyle } from "./styles";
-import BooksContainer from "./components/BooksContainer";
 import Header from "./components/Header";
+import BooksContainer from "./components/BooksContainer";
+import DetailPanel from "./components/DetailPanel";
 
 const App = () => {
   // store the API response
@@ -27,13 +28,12 @@ const App = () => {
     setSelectedBook(book);
   };
 
-  console.log(selectedBook);
-
   return (
     <>
       <GlobalStyle />
       <Header />
       <BooksContainer books={books} pickBook={pickBook} />
+      {selectedBook && <DetailPanel book={selectedBook} />}
     </>
   );
 };

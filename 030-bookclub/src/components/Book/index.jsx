@@ -1,15 +1,15 @@
 import React from "react";
 import { Container, Cover, Title, Author } from "./styles";
 
-const Book = ({ book, pickBook }) => {
+const Book = ({ book, pickBook, isLarge }) => {
   return (
-    <Container onClick={() => pickBook(book)}>
+    <Container $isLarge={isLarge} onClick={() => pickBook(book)}>
       <Cover
         src={book.image}
         alt={`Book cover for ${book.title} by ${book.author}`}
       />
       <figcaption>
-        <Title>{book.title}</Title>
+        <Title $isLarge={isLarge}>{book.title}</Title>
         <Author>{book.author}</Author>
       </figcaption>
     </Container>
