@@ -14,3 +14,16 @@ export const GlobalStyle = createGlobalStyle`
     color: white;
   }
 `;
+
+export const Pill = styled.div`
+  background: black;
+  border: 2px solid black;
+  border-radius: 32px;
+  height: 24px;
+  width: 400px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+`;
