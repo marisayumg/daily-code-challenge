@@ -1,0 +1,55 @@
+:root {
+  --purple: #c4b2df;
+  --green: #f0f8ba;
+  --blue: #dff0f2;
+  --white: #fff;
+  --black: #24211f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  display: flex;
+}
+
+h1 {
+  font-weight: 100;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 15px;
+}
+
+nav p {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+nav {
+  height: 100vh;
+  width: 25%;
+  padding: 24px;
+  background: var(--blue);
+}
+
+nav > div {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  height: 100vh;
+  width: 75%;
+  background: var(--purple);
+  padding: 24px;
+}
