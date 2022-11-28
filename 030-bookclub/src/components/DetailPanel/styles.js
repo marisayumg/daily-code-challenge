@@ -13,7 +13,7 @@ export const Panel = styled.article`
   bottom: 0;
   z-index: 2;
   overflow: scroll;
-  transition: 300ms;
+  transition: right 300ms;
 
   @media (max-width: 800px) {
     border-left: none;

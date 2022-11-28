@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: black;
   padding: 120px 40px;
   color: white;
   overflow: ${({ $isPanelOpen }) => ($isPanelOpen ? "hidden" : "scroll")};
@@ -9,16 +8,17 @@ export const Container = styled.div`
   top: ${({ $isPanelOpen, $top }) => ($isPanelOpen ? `-${$top}px` : 0)};
 
   @media (max-width: 800px) {
-    padding: 80px 24px;
+    padding: 120px 24px;
   }
 `;
 
 export const H2 = styled.h2`
-  font-size: 40px;
+  font-size: 24px;
+  font-weight: 400;
   margin: 0 0 4px 0;
 
   @media (max-width: 800px) {
-    font-size: 32px;
+    font-size: 24px;
   }
 `;
 
@@ -33,10 +33,12 @@ export const BookList = styled.div`
   @media (max-width: 1200px) {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 64px;
+    grid-row-gap: 64px;
   }
 
   @media (max-width: 640px) {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 24px;
+    grid-row-gap: 24px;
   }
 `;
