@@ -23,6 +23,7 @@ export const Panel = styled.article`
     bottom: ${({ $state }) =>
       $state === "entering" || $state === "entered" ? 0 : "-100vh"};
     right: unset;
+    z-index: 3;
   }
 `;
 
@@ -33,34 +34,6 @@ export const P = styled.p`
 export const Em = styled.em`
   font-style: italic;
   opacity: 0.7;
-`;
-
-export const Close = styled.button`
-  background: none;
-  border: 0;
-  cursor: pointer;
-  height: 24px;
-  width: 24px;
-  padding: 0;
-  position: relative;
-
-  /* Close button */
-  &::before,
-  &::after {
-    background-color: black;
-    content: "";
-    height: 24px;
-    width: 24px;
-    position: absolute;
-    top: 0;
-    left: -2px;
-  }
-  &::before {
-    transform: rotate(45deg);
-  }
-  &::after {
-    transform: rotate(-45deg);
-  }
 `;
 
 export const CloseWrapper = styled(Pill)`

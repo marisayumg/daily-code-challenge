@@ -7,6 +7,7 @@ const Book = ({ book, pickBook, isLarge }) => {
       <Cover
         src={book.image}
         alt={`Book cover for ${book.title} by ${book.author}`}
+        $isLarge={isLarge}
       />
       <figcaption>
         <Title $isLarge={isLarge}>{book.title}</Title>

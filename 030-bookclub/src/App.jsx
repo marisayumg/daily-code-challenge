@@ -40,9 +40,8 @@ const App = () => {
   };
 
   const filterBooks = (searchTerm) => {
-    const stringSearch = (bookAttribute, searchTerm) => {
+    const stringSearch = (bookAttribute, searchTerm) =>
       bookAttribute.toLowerCase().includes(searchTerm.toLowerCase());
-    };
 
     if (!searchTerm) {
       setFilteredBooks(books);

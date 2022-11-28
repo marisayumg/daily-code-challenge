@@ -6,12 +6,16 @@ export const Container = styled.figure`
 `;
 
 export const Cover = styled.img`
-  filter: grayscale(100%);
+  filter: ${({ $isLarge }) => ($isLarge ? "none" : "grayscale(100%)")};
   border: 2px solid black;
   object-fit: cover;
   aspect-ratio: 2 / 3;
   width: 100%;
   margin-bottom: 24px;
+
+  :hover {
+    filter: none;
+  }
 `;
 
 export const Title = styled.h3`

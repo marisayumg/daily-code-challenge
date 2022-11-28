@@ -15,7 +15,7 @@ export const Container = styled.div`
 
 export const H2 = styled.h2`
   font-size: 40px;
-  margin: 0 0 10px 0;
+  margin: 0 0 4px 0;
 
   @media (max-width: 800px) {
     font-size: 32px;
@@ -27,7 +27,7 @@ export const BookList = styled.div`
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 40px;
   grid-row-gap: 120px;
-  margin-top: 40px;
+  margin-top: 24px;
   max-width: 1400px;
 
   @media (max-width: 1200px) {
