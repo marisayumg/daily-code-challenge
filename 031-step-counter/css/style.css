@@ -20,7 +20,7 @@ body {
   font-size: 1rem;
   display: flex;
   justify-content: flex-end;
-  background: var(--purple);
+  background: var(--white);
 }
 
 img {
@@ -74,23 +74,26 @@ nav {
 main {
   width: 75%;
   padding: 40px;
-  background-color: white;
+  background-color: var(--black);
   margin: 24px;
   border-radius: 8px;
+  color: var(--white);
 }
 
 svg {
   width: 100%;
   margin: 8px 0 64px 0;
 }
-/* 
-rect {
-  fill: var(--purple);
-} */
+
+rect,
+circle {
+  fill: var(--green);
+}
 
 text {
   font-size: 14px;
   text-anchor: middle;
+  fill: var(--white);
 }
 
 .user {

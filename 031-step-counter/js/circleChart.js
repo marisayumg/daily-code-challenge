@@ -7,9 +7,10 @@ const radiusScale = d3.scaleSqrt()
     .range([0, 56]);
 
 // prettier-ignore
-const circleColorScale = d3.scaleSqrt()
+const circleColorScale = d3
+  .scaleSqrt()
   .domain([0, 30000])
-  .range(["#DFF0F2", "#C4B2DF"]);
+  .range(["#f0f8ba", "#f0f8ba"]);
 
 circleChartTag
   .selectAll("circle")
@@ -24,6 +25,13 @@ circleChartTag
     // i / 7 will return the rows of 7 columns
     return Math.floor(i / 7) * 140 + 56;
   })
+  .attr("r", 10)
+  .transition()
+  .duration(1000)
+  .delay((d, i) => {
+    return i * 20 + 500;
+  })
+  .ease(d3.easeQuadInOut)
   .attr("r", (d, i) => {
     return radiusScale(d);
   })

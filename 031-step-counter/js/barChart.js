@@ -8,9 +8,10 @@ const barScale = d3.scaleLinear()
   .range([1, 112])
 
 // prettier-ignore
-const rectColorScale = d3.scaleLinear()
-  .domain([0, 2000])
-  .range(["#DFF0F2", "#C4B2DF"]);
+const rectColorScale = d3
+  .scaleLinear()
+  .domain([1000, 2000])
+  .range(["#8A8C6C", "#f0f8ba"]);
 
 // pick the group we will insert rectangles in
 barChartTag
@@ -25,9 +26,18 @@ barChartTag
     return i * 40;
   })
   .attr("y", (d, i) => {
-    return 112 - barScale(d);
+    return 112;
   })
   .attr("width", 32)
+  .attr("height", 1)
+  .transition()
+  .duration(1000)
+  .delay((d, i) => {
+    return i * 20;
+  })
+  .attr("y", (d, i) => {
+    return 112 - barScale(d);
+  })
   .attr("height", (d, i) => {
     return barScale(d);
   })
