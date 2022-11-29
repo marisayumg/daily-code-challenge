@@ -4,63 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Step Counter</title>
   </head>
   <body>
     <nav>
-      <h1 class="greeting">Hello Marisa</h1>
-      <div>
+      <div class="greeting">
+        <h1>Step Counter</h1>
+      </div>
+      <div class="stats">
         <div>
-          <h2>Worst Day (in steps)</h2>
-          <p>3,724</p>
+          <h2>Worst Day</h2>
+          <h3>3,724</h3>
         </div>
         <div>
-          <h2>Average Day (in steps)</h2>
-          <p>6,000</p>
+          <h2>Average Day</h2>
+          <h3>6,000</h3>
         </div>
         <div>
-          <h2>Best Day (in steps)</h2>
-          <p>13,000</p>
+          <h2>Best Day</h2>
+          <h3>13,000</h3>
         </div>
         <div>
-          <h2>Total last 28 days (in steps)</h2>
-          <p>250,000</p>
+          <h2>Total last 28 days</h2>
+          <h3>250,000</h3>
         </div>
         <div>
-          <h2>Total so far today (in steps)</h2>
-          <p>8,000</p>
+          <h2>Total so far today</h2>
+          <h3>8,000</h3>
         </div>
+      </div>
+      <div class="user">
+        <div class="image">
+          <img src="./data/MG.jpg" />
+        </div>
+        <p>Marisa O.</p>
       </div>
     </nav>
     <main>
-      <div class="bar-chart">
+      <div>
         <h1>Today</h1>
-        <svg width="900" height="200">
-          <rect
-            x="0"
-            y="40"
-            width="50"
-            height="300"
-            fill="var(--purple)"
-          ></rect>
-          <rect
-            x="64"
-            y="40"
-            width="50"
-            height="300"
-            fill="var(--purple)"
-          ></rect>
-        </svg>
+        <svg width="900" height="150" class="bar-chart"></svg>
       </div>
-      <div class="circle-chart">
+      <div>
         <h1>Last 28 days</h1>
-        <svg width="900" height="600">
-          <circle cx="50" cy="50" r="50"></circle>
-          <circle cx="160" cy="50" r="50"></circle>
-        </svg>
+        <svg width="900" height="600" class="circle-chart"></svg>
       </div>
     </main>
   </body>
-  <script src="charts.js"></script>
+  <script src="./js/d3.min.js"></script>
+  <script src="./data/data.js"></script>
+  <script src="./js/barChart.js"></script>
+  <script src="./js/circleChart.js"></script>
 </html>

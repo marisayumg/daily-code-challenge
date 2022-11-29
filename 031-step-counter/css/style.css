@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap");
+
 :root {
   --purple: #c4b2df;
   --green: #f0f8ba;
@@ -13,7 +15,7 @@
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-size: 1rem;
   display: flex;
@@ -21,19 +23,33 @@ body {
   background: var(--purple);
 }
 
+img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
 h1 {
-  font-size: 24px;
-  font-weight: 400;
-  margin-bottom: 24px;
+  font-size: 32px;
+  font-weight: 200;
+  margin-bottom: 8px;
 }
 
 h2 {
   font-weight: 100;
-  font-size: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-nav p {
-  font-size: 4rem;
+h3 {
+  font-size: 32px;
+  font-weight: 100;
+  margin-top: 8px;
+}
+
+p {
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -46,13 +62,13 @@ nav {
   padding: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 80px;
 }
 
-nav > div {
+.stats {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 40px;
 }
 
 main {
@@ -64,10 +80,22 @@ main {
 }
 
 svg {
+  width: 100%;
   margin: 8px 0 64px 0;
 }
-
-rect,
-circle {
+/* 
+rect {
   fill: var(--purple);
+} */
+
+text {
+  font-size: 14px;
+  text-anchor: middle;
+}
+
+.user {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
