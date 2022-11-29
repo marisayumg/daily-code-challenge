@@ -6,6 +6,7 @@
   --blue: #dff0f2;
   --white: #fff;
   --black: #24211f;
+  --cream: #fef5ee;
 }
 
 * {
@@ -20,7 +21,7 @@ body {
   font-size: 1rem;
   display: flex;
   justify-content: flex-end;
-  background: var(--white);
+  background: var(--cream);
 }
 
 img {
@@ -46,6 +47,12 @@ h3 {
   font-size: 32px;
   font-weight: 100;
   margin-top: 8px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 
 p {
@@ -87,13 +94,29 @@ svg {
 
 rect,
 circle {
-  fill: var(--green);
+  fill: var(--purple);
+  transition: fill 100ms ease-in-out;
 }
 
 text {
   font-size: 14px;
   text-anchor: middle;
+  cursor: default;
   fill: var(--white);
+}
+
+text.steps {
+  fill: var(--cream);
+  opacity: 0;
+  transition: opacity 100ms ease-in-out;
+}
+
+g:hover text.steps {
+  opacity: 1;
+}
+
+g:hover rect {
+  fill: var(--cream);
 }
 
 .user {
@@ -101,4 +124,8 @@ text {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.transparent {
+  opacity: 0;
 }

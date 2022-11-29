@@ -13,20 +13,30 @@ const rectColorScale = d3
   .domain([1000, 2000])
   .range(["#8A8C6C", "#f0f8ba"]);
 
-// pick the group we will insert rectangles in
-barChartTag
-  .selectAll("rect")
-  // link our data
+// prettier-ignore
+const todayGroups = barChartTag
+  .selectAll("g")
   .data(todayData)
-  // D3's function to add things
   .enter()
+  .append("g")
+  .attr("transform", (d, i) => { return "translate(" + (i * 40) + ", 0)"})
+
+// add transparent rectangles that are full height so we can use for hover
+todayGroups
+  .append("rect")
+  .attr("class", "transparent")
+  .attr("x", 0)
+  .attr("y", 0)
+  .attr("width", 32)
+  .attr("height", 120);
+
+// Add rectangles to our group
+todayGroups
   .append("rect")
   // the attributes of our rectangles
-  .attr("x", (d, i) => {
-    return i * 40;
-  })
+  .attr("x", 0)
   .attr("y", (d, i) => {
-    return 112;
+    return 120;
   })
   .attr("width", 32)
   .attr("height", 1)
@@ -36,7 +46,7 @@ barChartTag
     return i * 20;
   })
   .attr("y", (d, i) => {
-    return 112 - barScale(d);
+    return 120 - barScale(d);
   })
   .attr("height", (d, i) => {
     return barScale(d);
@@ -45,15 +55,24 @@ barChartTag
     return rectColorScale(d);
   });
 
-barChartTag
-  .selectAll("text")
-  .data(todayData)
-  .enter()
+// add the bottom text to our group
+todayGroups
   .append("text")
-  .attr("x", (d, i) => {
-    return i * 40 + 20;
-  })
-  .attr("y", 132)
+  .attr("class", "hours")
+  .attr("x", 16)
+  .attr("y", 140)
   .text((d, i) => {
     return i;
+  });
+
+// add the top text to our group
+todayGroups
+  .append("text")
+  .attr("class", "steps")
+  .attr("x", 16)
+  .attr("y", (d, i) => {
+    return 120 - barScale(d) - 8;
+  })
+  .text((d, i) => {
+    return d;
   });

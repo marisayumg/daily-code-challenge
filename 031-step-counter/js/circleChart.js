@@ -4,7 +4,7 @@ const circleChartTag = d3.select("svg.circle-chart");
 // prettier-ignore
 const radiusScale = d3.scaleSqrt()
     .domain([0, 30000])
-    .range([0, 56]);
+    .range([0, 40]);
 
 // prettier-ignore
 const circleColorScale = d3
@@ -23,7 +23,7 @@ circleChartTag
   })
   .attr("cy", (d, i) => {
     // i / 7 will return the rows of 7 columns
-    return Math.floor(i / 7) * 140 + 56;
+    return Math.floor(i / 7) * 120 + 56;
   })
   .attr("r", 10)
   .transition()
@@ -48,7 +48,7 @@ circleChartTag
     return (i % 7) * 140 + 56;
   })
   .attr("y", (d, i) => {
-    return Math.floor(i / 7) * 140 + 130;
+    return Math.floor(i / 7) * 120 + 115;
   })
   .text((d, i) => {
     return i;
