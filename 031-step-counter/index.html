@@ -9,27 +9,58 @@
   </head>
   <body>
     <nav>
-      <h1>Hello Marisa</h1>
+      <h1 class="greeting">Hello Marisa</h1>
       <div>
-        <h2>Worst Day (in steps)</h2>
-        <p>3,724</p>
-
-        <h2>Average Day (in steps)</h2>
-        <p>6,000</p>
-
-        <h2>Best Day (in steps)</h2>
-        <p>13,000</p>
-
-        <h2>Total last 28 days (in steps)</h2>
-        <p>250,000</p>
-
-        <h2>Total so far today (in steps)</h2>
-        <p>8,000</p>
+        <div>
+          <h2>Worst Day (in steps)</h2>
+          <p>3,724</p>
+        </div>
+        <div>
+          <h2>Average Day (in steps)</h2>
+          <p>6,000</p>
+        </div>
+        <div>
+          <h2>Best Day (in steps)</h2>
+          <p>13,000</p>
+        </div>
+        <div>
+          <h2>Total last 28 days (in steps)</h2>
+          <p>250,000</p>
+        </div>
+        <div>
+          <h2>Total so far today (in steps)</h2>
+          <p>8,000</p>
+        </div>
       </div>
     </nav>
     <main>
-      <div><h1>Today</h1></div>
-      <div><h1>Last 28 days</h1></div>
+      <div class="bar-chart">
+        <h1>Today</h1>
+        <svg width="900" height="200">
+          <rect
+            x="0"
+            y="40"
+            width="50"
+            height="300"
+            fill="var(--purple)"
+          ></rect>
+          <rect
+            x="64"
+            y="40"
+            width="50"
+            height="300"
+            fill="var(--purple)"
+          ></rect>
+        </svg>
+      </div>
+      <div class="circle-chart">
+        <h1>Last 28 days</h1>
+        <svg width="900" height="600">
+          <circle cx="50" cy="50" r="50"></circle>
+          <circle cx="160" cy="50" r="50"></circle>
+        </svg>
+      </div>
     </main>
   </body>
+  <script src="charts.js"></script>
 </html>
