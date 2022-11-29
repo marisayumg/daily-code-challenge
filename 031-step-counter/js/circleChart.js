@@ -12,19 +12,40 @@ const circleColorScale = d3
   .domain([0, 30000])
   .range(["#f0f8ba", "#f0f8ba"]);
 
-circleChartTag
-  .selectAll("circle")
+// prettier-ignore
+const monthGroups = circleChartTag
+  .selectAll("g")
   .data(monthData)
   .enter()
+  .append("g")
+  .attr("transform", (d, i) => {
+    const x = (i % 7) * 140 + 56;
+    const y = Math.floor(i / 7) * 120 + 56;
+    return `translate(${x}, ${y})`;
+  });
+
+// biggest circle
+monthGroups
   .append("circle")
-  .attr("cx", (d, i) => {
-    // i remainder 7 will always return a number below 7
-    return (i % 7) * 140 + 56;
-  })
-  .attr("cy", (d, i) => {
-    // i / 7 will return the rows of 7 columns
-    return Math.floor(i / 7) * 120 + 56;
-  })
+  .attr("class", "ring")
+  .attr("cx", 0)
+  .attr("cy", 0)
+  .attr("r", 40);
+
+// biggest circle
+monthGroups
+  .append("circle")
+  .attr("class", "ring")
+  .attr("cx", 0)
+  .attr("cy", 0)
+  .attr("r", 50);
+
+// actual circle
+monthGroups
+  .append("circle")
+  .attr("class", "actual")
+  .attr("cx", 0)
+  .attr("cy", 0)
   .attr("r", 10)
   .transition()
   .duration(1000)
@@ -34,9 +55,6 @@ circleChartTag
   .ease(d3.easeQuadInOut)
   .attr("r", (d, i) => {
     return radiusScale(d);
-  })
-  .attr("fill", (d, i) => {
-    return circleColorScale(d);
   });
 
 circleChartTag

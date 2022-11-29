@@ -50,8 +50,8 @@ h3 {
 }
 
 h4 {
-  font-size: 20px;
-  font-weight: 100;
+  font-size: 16px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -66,7 +66,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 40px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -93,9 +93,15 @@ svg {
 }
 
 rect,
-circle {
+circle.actual {
   fill: var(--purple);
   transition: fill 100ms ease-in-out;
+}
+
+circle.ring {
+  fill: none;
+  stroke: var(--white);
+  opacity: 0.3;
 }
 
 text {
