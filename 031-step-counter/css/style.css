@@ -44,7 +44,7 @@ h2 {
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 100;
   margin-top: 8px;
 }
@@ -101,7 +101,8 @@ circle.actual {
 circle.ring {
   fill: none;
   stroke: var(--white);
-  opacity: 0.3;
+  stroke-width: 1px;
+  opacity: 0.2;
 }
 
 text {
@@ -123,6 +124,18 @@ g:hover text.steps {
 
 g:hover rect {
   fill: var(--cream);
+}
+
+g:hover circle.actual {
+  fill: var(--cream);
+}
+
+text.day {
+  transition: opacity 100ms ease-in-out;
+}
+
+g:hover text.day {
+  opacity: 0;
 }
 
 .user {

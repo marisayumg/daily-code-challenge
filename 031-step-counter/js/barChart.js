@@ -7,6 +7,10 @@ const barScale = d3.scaleLinear()
   .domain([0, 2000])
   .range([1, 112])
 
+// formatting to get 0 before hours
+const hourFormat = d3.format("02");
+const stepsFormat = d3.format(",.0f");
+
 // prettier-ignore
 const rectColorScale = d3
   .scaleLinear()
@@ -62,7 +66,7 @@ todayGroups
   .attr("x", 16)
   .attr("y", 140)
   .text((d, i) => {
-    return i;
+    return hourFormat(i);
   });
 
 // add the top text to our group
@@ -74,5 +78,5 @@ todayGroups
     return 120 - barScale(d) - 8;
   })
   .text((d, i) => {
-    return d;
+    return stepsFormat(d);
   });

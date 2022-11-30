@@ -24,21 +24,21 @@ const monthGroups = circleChartTag
     return `translate(${x}, ${y})`;
   });
 
-// biggest circle
+// 10,000 steps circle
 monthGroups
   .append("circle")
   .attr("class", "ring")
   .attr("cx", 0)
   .attr("cy", 0)
-  .attr("r", 40);
+  .attr("r", radiusScale(10000));
 
-// biggest circle
+// 20,000 steps circle
 monthGroups
   .append("circle")
   .attr("class", "ring")
   .attr("cx", 0)
   .attr("cy", 0)
-  .attr("r", 50);
+  .attr("r", radiusScale(20000));
 
 // actual circle
 monthGroups
@@ -57,17 +57,22 @@ monthGroups
     return radiusScale(d);
   });
 
-circleChartTag
-  .selectAll("text")
-  .data(monthData)
-  .enter()
+// day text
+monthGroups
   .append("text")
-  .attr("x", (d, i) => {
-    return (i % 7) * 140 + 56;
-  })
-  .attr("y", (d, i) => {
-    return Math.floor(i / 7) * 120 + 115;
-  })
+  .attr("class", "day")
+  .attr("x", 0)
+  .attr("y", 64)
   .text((d, i) => {
-    return i;
+    return i + 1;
+  });
+
+// steps text
+monthGroups
+  .append("text")
+  .attr("class", "steps")
+  .attr("x", 0)
+  .attr("y", 64)
+  .text((d, i) => {
+    return d;
   });
