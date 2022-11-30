@@ -83,3 +83,5 @@ Datavis: Coming soon
 #030 - [React: Book Club](https://mo-book-club.netlify.app/)
 
 #031 - [Datavis: Step Counter](https://mo-step-counter.netlify.app/)
+
+#032 - [Datavis: Heatmap](https://mo-heatmap.netlify.app/)
