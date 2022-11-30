@@ -1,12 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,500;1,200;1,700&display=swap");
 
 :root {
-  --purple: #c4b2df;
-  --green: #f0f8ba;
-  --blue: #dff0f2;
   --white: #fff;
-  --black: #24211f;
-  --cream: #fef5ee;
+  --grey: #e8e8e8;
+  --darkgrey: #232531;
+  --blue: #0152fe;
 }
 
 * {
@@ -16,12 +14,12 @@
 }
 
 body {
-  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-size: 1rem;
   display: flex;
   justify-content: flex-end;
-  background: var(--cream);
+  background: var(--blue);
 }
 
 img {
@@ -31,33 +29,43 @@ img {
 }
 
 h1 {
-  font-size: 32px;
-  font-weight: 200;
-  margin-bottom: 8px;
+  font-size: 56px;
+  line-height: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+  color: var(--blue);
 }
 
 h2 {
-  font-weight: 100;
-  font-size: 14px;
+  font-weight: 200;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  opacity: 0.4;
+  color: var(--white);
 }
 
 h3 {
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 200;
   margin-top: 8px;
+  opacity: 0.9;
 }
 
 h4 {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 200;
   text-transform: uppercase;
 }
 
 p {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 200;
+}
+
+span {
+  font-style: italic;
 }
 
 nav {
@@ -69,7 +77,10 @@ nav {
   padding: 24px;
   display: flex;
   flex-direction: column;
+  align-items: space-between;
   gap: 80px;
+  background-color: var(--darkgrey);
+  color: var(--white);
 }
 
 .stats {
@@ -81,9 +92,7 @@ nav {
 main {
   width: 75%;
   padding: 40px;
-  background-color: var(--black);
-  margin: 24px;
-  border-radius: 8px;
+  background-color: var(--blue);
   color: var(--white);
 }
 
@@ -92,17 +101,23 @@ svg {
   margin: 8px 0 64px 0;
 }
 
-rect,
+rect {
+  fill: var(--darkgrey);
+  opacity: 0.9;
+  transition: fill 100ms ease-in-out;
+}
+
 circle.actual {
-  fill: var(--purple);
+  fill: var(--darkgrey);
+  opacity: 0.9;
   transition: fill 100ms ease-in-out;
 }
 
 circle.ring {
   fill: none;
-  stroke: var(--white);
+  stroke: var(--darkgrey);
   stroke-width: 1px;
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 text {
@@ -113,7 +128,7 @@ text {
 }
 
 text.steps {
-  fill: var(--cream);
+  fill: var(--white);
   opacity: 0;
   transition: opacity 100ms ease-in-out;
 }
@@ -123,11 +138,11 @@ g:hover text.steps {
 }
 
 g:hover rect {
-  fill: var(--cream);
+  fill: var(--white);
 }
 
 g:hover circle.actual {
-  fill: var(--cream);
+  fill: var(--white);
 }
 
 text.day {
@@ -143,6 +158,8 @@ g:hover text.day {
   display: flex;
   align-items: center;
   gap: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 16px 0;
 }
 
 .transparent {

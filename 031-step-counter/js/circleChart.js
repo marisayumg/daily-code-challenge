@@ -7,12 +7,6 @@ const radiusScale = d3.scaleSqrt()
     .range([0, 40]);
 
 // prettier-ignore
-const circleColorScale = d3
-  .scaleSqrt()
-  .domain([0, 30000])
-  .range(["#f0f8ba", "#f0f8ba"]);
-
-// prettier-ignore
 const monthGroups = circleChartTag
   .selectAll("g")
   .data(monthData)
@@ -74,5 +68,5 @@ monthGroups
   .attr("x", 0)
   .attr("y", 64)
   .text((d, i) => {
-    return d;
+    return stepsFormat(d);
   });
