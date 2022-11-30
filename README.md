@@ -81,3 +81,5 @@ Datavis: Coming soon
 #029 - [React: Album Cover](https://mo-jigsaw-album-cover.netlify.app/)
 
 #030 - [React: Book Club](https://mo-book-club.netlify.app/)
+
+#031 - [Datavis: Step Counter](https://mo-step-counter.netlify.app/)
