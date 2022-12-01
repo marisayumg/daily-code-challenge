@@ -46,11 +46,14 @@ select {
   transition: 50ms;
 }
 
-select:hover {
+select:hover,
+select:focus {
   background-color: var(--primary-color);
   color: var(--background);
 }
 
-select:focus {
-  border: 2px solid var(--primary-color);
+circle {
+  fill: var(--primary-color);
+  stroke: var(--background);
+  stroke-width: 2px;
 }
