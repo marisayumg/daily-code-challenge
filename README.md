@@ -84,4 +84,6 @@ Datavis: [Heatmap](https://mo-heatmap.netlify.app/) / [Step Counter](https://mo-
 
 #031 - [Datavis: Step Counter](https://mo-step-counter.netlify.app/)
 
-#032 - [Datavis: Heatmap](https://mo-heatmap.netlify.app/)
+#032 - [Datavis: Annual temperatures heatmap](https://mo-heatmap.netlify.app/)
+
+#033 - [Datavis: Living cost scattermap](https://mo-living-cost.netlify.app/)
