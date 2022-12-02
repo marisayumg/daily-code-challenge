@@ -57,3 +57,41 @@ circle {
   stroke: var(--background);
   stroke-width: 2px;
 }
+
+line {
+  stroke-width: 1px;
+  stroke-dasharray: 2 8;
+}
+
+path.domain {
+  stroke-width: 1.5px;
+}
+
+text.x-axis,
+text.y-axis {
+  fill: var(--primary-color);
+  font-size: 24px;
+  text-anchor: middle;
+}
+
+g.city rect {
+  fill: var(--primary-color);
+  opacity: 0;
+}
+
+g.city text {
+  fill: var(--background);
+  text-anchor: middle;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0;
+}
+
+g.city:hover rect,
+g.city:hover text {
+  opacity: 1;
+}
+
+g.city:hover g.city text {
+  opacity: 1;
+}

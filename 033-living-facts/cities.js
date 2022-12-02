@@ -7,6 +7,32 @@ svg
     .attr("width", 960)
     .attr("height", 720)
 
+//prettier-ignore
+const axisXGroup = svg
+  .append("g")
+  .attr("class", "x-axis")
+  .attr("transform", "translate(0,620)");
+
+//prettier-ignore
+const axisYGroup = svg
+  .append("g")
+  .attr("class", "y-axis")
+  .attr("transform", "translate(100,0)");
+
+//prettier-ignore
+const axisXText = svg
+  .append("text")
+  .attr("class", "x-axis")
+  .attr("transform", "translate(480, 680)")
+  .text("X axis");
+
+//prettier-ignore
+const axisYText = svg
+  .append("text")
+  .attr("class", "y-axis")
+  .attr("transform", "translate(30,360) rotate(-90)")
+  .text("Y axis");
+
 // update data
 const placeCities = () => {
   let inputX = document.querySelector("select[name=valueX]");
@@ -14,6 +40,12 @@ const placeCities = () => {
 
   let valueX = inputX.value;
   let valueY = inputY.value;
+
+  let textX = inputX.options[inputX.selectedIndex].innerHTML;
+  let textY = inputY.options[inputY.selectedIndex].innerHTML;
+
+  axisXText.text(textX);
+  axisYText.text(textY);
 
   // max value for the data on X axis
   let maxValueX = d3.max(data, (d, i) => {
@@ -41,12 +73,35 @@ const placeCities = () => {
     .range([620, 100])
 
   //prettier-ignore
-  const scaleR = d3.scaleSqrt().domain([0, maxValueR]).range([0, 32]);
+  const scaleR = d3.scaleSqrt()
+    .domain([0, maxValueR])
+    .range([0, 32]);
+
+  //prettier-ignore
+  const axisX = d3
+    .axisBottom(scaleX)
+    .tickSize(-520)
+    .tickSizeOuter(0)
+    .tickPadding(8)
+    .ticks(10, "$,f");
+
+  axisXGroup.call(axisX);
+
+  //prettier-ignore
+  const axisY = d3
+    .axisLeft(scaleY)
+    .tickPadding(8)
+    .tickSize(-760)
+    .tickSizeOuter(0)
+    .tickPadding(8)
+    .ticks(10, "$,f");
+
+  axisYGroup.call(axisY);
 
   //prettier-ignore
   const cities = svg
   .selectAll("g.city")
-  .data(data)
+  .data(data, (d,i) => { return d.city})
   .enter()
   .append("g")
   .attr("class", "city")
@@ -79,6 +134,28 @@ const placeCities = () => {
     .attr("r", (d, i) => {
         return scaleR(d.population)
     });
+
+  //prettier-ignore
+  cities
+    .append("rect")
+    .attr("x", -60)
+    .attr("y", (d, i) => { return -1 * scaleR(d.population) -30})
+    .attr("width", 120)
+    .attr("height", 30)
+
+  //prettier-ignore
+  cities
+    .append("text")
+    .attr("x", 0)
+    .attr("y", (d, i) => { return -1 * scaleR(d.population) -11})
+    .text((d, i) => { return d.city })
+
+  //prettier-ignore
+  svg
+    .selectAll("g.city")
+    .on("mouseover", function() {
+        d3.select(this).raise()
+    })
 };
 
 // run on change of any select box
