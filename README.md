@@ -15,7 +15,7 @@ Animation: [Moiré Effect](https://mo-moire-effect.netlify.app/) / [Zipper](http
 
 WebGL: [Shaders Gradient](https://shaders1-gradient.netlify.app/) / [Shaders2 test pattern](https://shaders-zebra.netlify.app/)
 
-Datavis: [Heatmap](https://mo-heatmap.netlify.app/) / [Step Counter](https://mo-step-counter.netlify.app/)
+Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatures](https://mo-heatmap.netlify.app/) / [Step Counter](https://mo-step-counter.netlify.app/)
 
 
 
