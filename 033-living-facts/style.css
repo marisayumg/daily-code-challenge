@@ -24,8 +24,16 @@ body {
 }
 
 h1 {
-  font-size: 64px;
-  margin-bottom: 16px;
+  font-size: clamp(3rem, 2.6479rem + 1.5023vw, 4rem);
+}
+
+header {
+  max-width: 1008px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin: 0 auto;
 }
 
 form {
@@ -36,7 +44,7 @@ form {
 }
 
 select {
-  width: 320px;
+  width: 240px;
   padding: 8px;
   border: 1.5px solid var(--primary-color);
   color: var(--primary-color);
@@ -94,4 +102,19 @@ g.city:hover text {
 
 g.city:hover g.city text {
   opacity: 1;
+}
+
+@media (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  svg {
+    margin-top: 64px;
+  }
 }
