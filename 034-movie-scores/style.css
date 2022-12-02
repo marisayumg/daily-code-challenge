@@ -62,7 +62,11 @@ select {
 
 text {
   fill: white;
-  opacity: 0.8;
+}
+
+text.year {
+  opacity: 0.4;
+  transition: opacity 150ms;
 }
 
 circle.imdb {
@@ -76,8 +80,23 @@ circle.metascore {
 rect {
   fill: rgba(255, 255, 255, 0.1);
   opacity: 0;
+  transition: opacity 150ms;
 }
 
 g:hover rect {
   opacity: 1;
+}
+
+g:hover text {
+  opacity: 1;
+}
+
+path.imdb {
+  fill: none;
+  stroke: var(--imdb);
+}
+
+path.metascore {
+  fill: none;
+  stroke: var(--metascore);
 }
