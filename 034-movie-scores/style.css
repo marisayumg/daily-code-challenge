@@ -64,6 +64,16 @@ text {
   fill: white;
 }
 
+text.imdb {
+  font-size: 14px;
+  fill: var(--imdb);
+}
+
+text.metascore {
+  font-size: 14px;
+  fill: var(--metascore);
+}
+
 text.year {
   opacity: 0.4;
   transition: opacity 150ms;

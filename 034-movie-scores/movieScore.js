@@ -1,5 +1,10 @@
 const selectTag = document.querySelector("select");
 
+data = data.map((d, i) => {
+  d.difference = d.imdb - d.metascore;
+  return d;
+});
+
 const svg = d3.select("svg");
 
 // score scale
@@ -25,7 +30,7 @@ const imdbPath = svg
 // imdb line specifications
 // prettier-ignore
 const metascoreLine = d3.line()
-    .x((d, i) => {return scoreScale(d.metascore) + 82})
+    .x((d, i) => {return scoreScale(d.metascore) + 80})
     .y((d, i) => {return i * 48 + 72})
 
 // imdb Path tag (the actual element)
@@ -50,6 +55,15 @@ const movieGroup = svg
   .attr("transform", (d, i) => {
     return `translate(80, ${i * 48 + 80})`;
   });
+
+// Background rectangle
+// prettier-ignore
+movieGroup
+  .append("rect")
+  .attr("x", 0)
+  .attr("y", -30)
+  .attr("width", 1280)
+  .attr("height", 48)
 
 // movie year
 // prettier-ignore
@@ -87,14 +101,53 @@ movieGroup
   .attr("r", 8)
   .attr("class", "metascore");
 
-// Background rectangle
+// imdb score number
 // prettier-ignore
 movieGroup
-  .append("rect")
-  .attr("x", 0)
-  .attr("y", -30)
-  .attr("width", 1280)
-  .attr("height", 48)
+  .append("text")
+  .attr("class", "imdb")
+  .attr("x", (d, i) => {
+    if(d.difference > 0) {
+        return scoreScale(d.imdb) + 20;
+    } else {
+        return scoreScale(d.imdb) - 20;
+    }
+  })
+  .attr("y", -2)
+  .text((d, i) => {
+    return d.imdb;
+  })
+  .style("text-anchor", (d, i) => {
+    if(d.difference > 0) {
+        return "start"
+    } else {
+        return "end"
+    }
+  })
+
+// metascore score number
+// prettier-ignore
+movieGroup
+  .append("text")
+  .attr("class", "metascore")
+  .attr("x", (d, i) => {
+    if (d.difference > 0) {
+      return scoreScale(d.metascore) - 20;
+    } else {
+      return scoreScale(d.metascore) + 20;
+    }
+  })
+  .attr("y", -2)
+  .text((d, i) => {
+    return d.metascore;
+  })
+  .style("text-anchor", (d, i) => {
+    if (d.difference > 0) {
+      return "end";
+    } else {
+      return "start";
+    }
+  });
 
 selectTag.addEventListener("change", function () {
   data.sort((a, b) => {
@@ -110,6 +163,9 @@ selectTag.addEventListener("change", function () {
     if (this.value === "year") {
       return d3.ascending(a.year, b.year);
     }
+    if (this.value === "difference") {
+      return d3.descending(a.difference, b.difference);
+    }
   });
 
   // Tell data to update again
@@ -121,4 +177,24 @@ selectTag.addEventListener("change", function () {
     .attr("transform", (d, i) => {
       return `translate(80, ${i * 48 + 80})`;
     });
+
+  // Tell data to update again
+  // prettier-ignore
+  imdbPath
+    .datum(data, (d, i) => {
+      return d.title;
+    })
+    .transition()
+    .duration(1000)
+    .attr("d", imdbLine)
+
+  // Tell data to update again
+  // prettier-ignore
+  metascorePath
+    .datum(data, (d, i) => {
+      return d.title;
+    })
+    .transition()
+    .duration(1000)
+    .attr("d", metascoreLine)
 });
