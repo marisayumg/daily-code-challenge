@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Syne", Helvetica, sans-serif;
+  color: white;
+  font-weight: 400;
+  background-color: darkblue;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+h1.moving-text {
+  position: absolute;
+  top: 40px;
+  left: 16px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 110%;
+  margin-bottom: 48px;
+}
+
+em {
+  font-style: normal;
+  color: darksalmon;
+}
+
+header {
+  display: flex;
+  gap: 12px;
+  padding: 0 16px 80px 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header .title {
+  display: block;
+  border-top: 8px solid yellow;
+  padding-top: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin: 120px;
+}
+
+section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+img {
+  max-width: 480px;
+}
