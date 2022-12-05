@@ -7,7 +7,7 @@ const addMovement = () => {
   const midOfViewport = topOfViewport + window.innerHeight / 2;
 
   // find the middle of each section
-  sectionTags.forEach((section) => {
+  sectionTags.forEach((section, index) => {
     // top of each section
     const topOfSection = section.offsetTop;
     // middle of each section
@@ -19,8 +19,18 @@ const addMovement = () => {
     const imageTag = section.querySelector("img");
     const quoteTag = section.querySelector("div.quote");
 
+    let rotation = distanceToSection / 80;
+    let quoteDistance = (-1 * distanceToSection) / 2;
+
+    // make every other image and quote rotate the oposite way
+    if (index % 2 === 0) {
+      rotation = rotation * -1;
+    }
+
     //
-    imageTag.style.transform = `rotate(20deg)`;
+    imageTag.style.transform = `rotate(${rotation}deg)`;
+    quoteTag.style.top = `${quoteDistance}px`;
+    quoteTag.style.transform = `rotate(${-1 * rotation}deg)`;
   });
 };
 

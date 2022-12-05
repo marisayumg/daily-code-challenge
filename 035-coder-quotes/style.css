@@ -44,6 +44,7 @@ header {
   top: 0;
   left: 0;
   transition: 100ms ease-in-out;
+  z-index: 2;
 }
 
 .title {
@@ -64,6 +65,11 @@ section {
   align-items: center;
   gap: 80px;
   margin: 120px;
+}
+
+section img,
+section div {
+  position: relative;
 }
 
 section:nth-child(even) {
