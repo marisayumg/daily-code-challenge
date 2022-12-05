@@ -44,7 +44,7 @@ const metascorePath = svg
 // prettier-ignore
 svg
     .attr("height", 48 * data.length)
-    .attr("width", 1400)
+    .attr("width", "100%")
 
 const movieGroup = svg
   .selectAll("g.movie")
@@ -197,4 +197,26 @@ selectTag.addEventListener("change", function () {
     .transition()
     .duration(1000)
     .attr("d", metascoreLine)
+});
+
+const resize = function () {
+  const svgTag = document.querySelector("svg");
+  const svgWidth = svgTag.clientWidth;
+
+  // prettier-ignore
+  scoreScale
+    .range([(800 / 1200) * svgWidth, (1200 / 1200) * svgWidth]);
+
+  // prettier-ignore
+  movieGroup
+    .selectAll("circle.metascore")    
+    .attr("cx", (d, i) => { return scoreScale(d.metascore)})
+};
+
+// run on page load
+resize();
+
+// run resize when we resize the page
+window.addEventListener("resize", function () {
+  resize();
 });

@@ -16,6 +16,7 @@ body {
 h1 {
   font-size: 24px;
   font-weight: 800;
+  transition: 500ms ease-in-out;
 }
 
 h1.moving-text {
@@ -31,9 +32,8 @@ h2 {
   margin-bottom: 48px;
 }
 
-em {
-  font-style: normal;
-  color: darksalmon;
+p {
+  color: yellow;
 }
 
 header {
@@ -43,14 +43,20 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  transition: 100ms ease-in-out;
 }
 
-header .title {
+.title {
   display: block;
   border-top: 8px solid yellow;
   padding-top: 8px;
   display: flex;
+  flex-direction: row;
   gap: 8px;
+}
+
+header.scrolled {
+  padding: 0;
 }
 
 section {

@@ -110,3 +110,9 @@ path.metascore {
   fill: none;
   stroke: var(--metascore);
 }
+
+@media (max-width: 1000px) {
+  header {
+    margin: 0 24px;
+  }
+}
