@@ -1,5 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap");
 
+:root {
+  --white: #fff;
+  --indigo: #0c52e8;
+  --aqua: #a7dcfe;
+  --pistachio: #d0fecf;
+  --lavender: #a988f9;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,9 +25,10 @@
 
 body {
   font-family: "Syne", Helvetica, sans-serif;
-  color: white;
+  color: var(--aqua);
   font-weight: 400;
-  background-color: darkblue;
+  background-color: var(--indigo);
+  transition: all 1s;
 }
 
 h1 {
@@ -32,10 +50,6 @@ h2 {
   margin-bottom: 48px;
 }
 
-p {
-  color: yellow;
-}
-
 header {
   display: flex;
   gap: 12px;
@@ -49,7 +63,8 @@ header {
 
 .title {
   display: block;
-  border-top: 8px solid yellow;
+  color: var(--white);
+  border-top: 8px solid var(--white);
   padding-top: 8px;
   display: flex;
   flex-direction: row;
@@ -78,4 +93,16 @@ section:nth-child(even) {
 
 img {
   max-width: 480px;
+}
+
+div.stamps {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+div.stamps img {
+  position: absolute;
+  animation: spin 30s linear infinite;
 }
