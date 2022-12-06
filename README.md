@@ -89,3 +89,5 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 #033 - [Datavis: Living Cost](https://mo-living-cost.netlify.app/)
 
 #034 - [Datavis: Movie Scores](https://mo-movie-scores.netlify.app/)
+
+#035 - [JS: Coders Quotes](https://mo-coders-quotes.netlify.app/)
