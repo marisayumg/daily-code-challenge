@@ -1,22 +1,47 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-main {
+body {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+main {
+  width: 350px;
+  height: 475px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 
 img {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  transition: transform 0.5s, box-shadow 0.5s;
 }
 
 img:first-child {
   z-index: 1;
+}
+
+main:hover img {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
