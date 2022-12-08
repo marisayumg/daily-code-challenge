@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("assets/hk-grotesk.woff2"), url("assets/hk-grotesk.woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "HK Grotesk";
+  font-size: 1.4rem;
+  color: white;
+  background-color: #242529;
+}
+
+h1 {
+  font-size: 1.6rem;
+  line-height: 90%;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  padding: 24px 32px 24px 24px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+footer {
+  position: fixed;
+  width: 100vw;
+  padding: 24px 32px 24px 24px;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cornsilk;
+}
+
+div.progress-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #b4a8ea;
+  z-index: 10;
+}
+
+div.content {
+  position: relative;
+}
+
+/* img also needs to be relative so shapes can go behind it */
+div.content img {
+  position: relative;
+}
+
+.square,
+.circle {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+.square {
+  top: 100px;
+  left: -100px;
+}
+
+.circle {
+  border-radius: 50%;
+  bottom: 50px;
+  right: -100px;
+}
+
+section.s1 {
+  background-color: #242529;
+}
+
+section.s1 .circle {
+  background-color: #b4a8ea;
+}
+
+section.s1 .square {
+  background-color: #394bc7;
+}
+
+section.s2 {
+  background-color: #242529;
+}
+
+section.s2 .circle {
+  background-color: #fd498f;
+}
+
+section.s2 .square {
+  background-color: #523b8d;
+}
+
+section.s3 {
+  background-color: #fff;
+}
+
+section.s3 .circle {
+  background-color: #d8437b;
+}
+
+section.s3 .square {
+  background-color: #24086d;
+}
+
+section.s4 {
+  background-color: #fff;
+}
+
+section.s4 .circle {
+  background-color: #587a93;
+}
+
+section.s4 .square {
+  background-color: #cdd4df;
+}

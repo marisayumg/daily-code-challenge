@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Scroll parallax</title>
+  </head>
+  <body>
+    <div class="progress-bar"></div>
+    <header>
+      <h1>
+        Parallax<br />
+        Experiment
+      </h1>
+
+      <p class="scrolled">0</p>
+    </header>
+    <section class="s1">
+      <div class="content">
+        <div class="square"></div>
+        <img src="assets/image1.jpg" srcset="assets/image1-2x.jpg 2x" />
+        <div class="circle"></div>
+      </div>
+    </section>
+    <section class="s2">
+      <div class="content">
+        <div class="circle"></div>
+        <img src="assets/image2.jpg" srcset="assets/image2-2x.jpg 2x" />
+        <div class="square"></div>
+      </div>
+    </section>
+    <section class="s3">
+      <div class="content">
+        <div class="square"></div>
+        <img src="assets/image3.jpg" srcset="assets/image3-2x.jpg 2x" />
+        <div class="circle"></div>
+      </div>
+    </section>
+    <section class="s4">
+      <div class="content">
+        <div class="circle"></div>
+        <img src="assets/image4.jpg" srcset="assets/image4-2x.jpg 2x" />
+        <div class="square"></div>
+      </div>
+    </section>
+    <footer>
+      <p>1 / 4</p>
+      <p class="scrollable">0</p>
+    </footer>
+  </body>
+  <script src="parallax.js"></script>
+</html>
