@@ -1,0 +1,135 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 130%;
+  color: #052837;
+  background-color: #daebf9;
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 105%;
+  margin-bottom: 32px;
+}
+
+ul {
+  display: flex;
+  gap: 24px;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: #052837;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  height: 96px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 40px;
+  transition: background-color 250ms ease-in-out, height 100ms ease-in-out;
+}
+
+header.scrolled {
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  height: 64px;
+}
+
+header h1,
+header nav {
+  flex: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+}
+
+section.hero {
+  justify-content: start;
+  background-image: url("assets/hero.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 130% 50%;
+}
+
+section.content {
+  background-color: #f2f2f0;
+}
+
+section.content {
+  background-image: url("assets/image2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% 60%;
+}
+
+section.content {
+  justify-content: end;
+}
+
+section.content em {
+  text-decoration: line-through;
+}
+
+div.text {
+  max-width: 480px;
+}
+
+a.button {
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 24px;
+  border-radius: 32px;
+  background-color: #052837;
+  color: white;
+  margin-top: 64px;
+}
