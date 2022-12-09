@@ -14,6 +14,7 @@ body {
   font-size: 1.4rem;
   color: white;
   background-color: #242529;
+  transition: color 100ms ease-in-out;
 }
 
 h1 {
@@ -28,6 +29,10 @@ header {
   display: flex;
   justify-content: space-between;
   z-index: 10;
+}
+
+header.black {
+  color: "#242529";
 }
 
 footer {
@@ -46,7 +51,6 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: cornsilk;
 }
 
 div.progress-bar {
@@ -54,9 +58,10 @@ div.progress-bar {
   top: 0;
   right: 0;
   width: 8px;
-  height: 8px;
+  height: 0;
   background-color: #b4a8ea;
   z-index: 10;
+  transition: background-color 100ms ease-in-out;
 }
 
 div.content {
@@ -75,15 +80,8 @@ div.content img {
   position: absolute;
 }
 
-.square {
-  top: 100px;
-  left: -100px;
-}
-
 .circle {
   border-radius: 50%;
-  bottom: 50px;
-  right: -100px;
 }
 
 section.s1 {
@@ -92,10 +90,14 @@ section.s1 {
 
 section.s1 .circle {
   background-color: #b4a8ea;
+  bottom: 50px;
+  right: -100px;
 }
 
 section.s1 .square {
   background-color: #394bc7;
+  top: 100px;
+  left: -100px;
 }
 
 section.s2 {
@@ -104,10 +106,14 @@ section.s2 {
 
 section.s2 .circle {
   background-color: #fd498f;
+  top: 100px;
+  left: -100px;
 }
 
 section.s2 .square {
-  background-color: #523b8d;
+  background-color: #803790;
+  bottom: 40px;
+  right: -100px;
 }
 
 section.s3 {
@@ -115,11 +121,15 @@ section.s3 {
 }
 
 section.s3 .circle {
-  background-color: #d8437b;
+  background-color: #2e145b;
+  bottom: 200px;
+  right: -100px;
 }
 
 section.s3 .square {
-  background-color: #24086d;
+  background-color: #f4454a;
+  left: -100px;
+  top: 400px;
 }
 
 section.s4 {
@@ -128,8 +138,23 @@ section.s4 {
 
 section.s4 .circle {
   background-color: #587a93;
+  left: -100px;
+  bottom: 200px;
 }
 
 section.s4 .square {
   background-color: #cdd4df;
+  right: -100px;
+  bottom: 300px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
