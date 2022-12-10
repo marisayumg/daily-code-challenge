@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Bandeins";
+  src: url("assets/bandeins-strange-variable.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bandeins", Helvetica, Arial, sans-serif;
+  width: 100vw;
+  height: 260vh;
+  background-color: darkblue;
+  color: white;
+}
+
+h1 {
+  font-size: 16px;
+  line-height: 85%;
+  text-transform: uppercase;
+  position: fixed;
+  top: 24px;
+  left: 24px;
+}
+
+p {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+}
