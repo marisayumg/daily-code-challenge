@@ -101,3 +101,5 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 #039 - [CSS: Variable Fonts](https://mo-variable-fonts.netlify.app/)
 
 #040 - [CSS: Variable Fonts 2](https://mo-variable-fonts-2.netlify.app/)
+
+#041 - [CSS: Variable Fonts 3]()
