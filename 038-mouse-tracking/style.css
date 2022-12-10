@@ -78,6 +78,31 @@ header nav {
   flex: 1;
 }
 
+.smiley {
+  position: relative;
+}
+
+div.iris {
+  position: absolute;
+  top: 23px;
+  left: 11px;
+}
+
+div.iris-right {
+  left: 49px;
+}
+
+div.iris div {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #052837;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
 nav {
   display: flex;
   justify-content: end;

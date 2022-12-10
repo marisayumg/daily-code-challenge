@@ -11,9 +11,12 @@ const fadeIn = () => {
 
     let delay = 0.25;
 
-    if (tagsTop < window.innerHeight) {
+    if (tagsTop < window.innerHeight && tagsBottom > 0) {
       tag.style.animation = `fadeIn 1s ${delay}s both`;
       delay += 0.25;
+    } else {
+      tag.style.opacity = 0;
+      tag.style.animation = "";
     }
   });
 };
