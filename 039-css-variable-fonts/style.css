@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Inter";
+  src: url("assets/inter-var.woff2");
+}
+
+@keyframes animate-type {
+  0% {
+    font-variation-settings: "wght" 100, "slnt" 0;
+  }
+  100% {
+    font-variation-settings: "wght" 900, "slnt" -10;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-size: 14vw;
+  line-height: 85%;
+  text-transform: uppercase;
+  animation: animate-type 3s infinite alternate;
+}
