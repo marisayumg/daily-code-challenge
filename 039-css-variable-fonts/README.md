@@ -13,4 +13,4 @@ An experiment using variable fonts.
 ## Requirements
 
 1. Upload a variable font;
-2. Add changing weight and slant for the font in an animation.
+2. Animate changing weight and slant of the font.
