@@ -9,7 +9,7 @@ React: [Tenzies Game](https://mo-tenzies-game.netlify.app/) / [React Gallery](ht
 
 API: [Uova Contentful](https://mo-uova-contentful.netlify.app/) / [Jiffy Clips](https://mo-jiffy-clips.netlify.app/) / [Designer Quotes](https://mo-designer-quotes.netlify.app/)
 
-Experimental type: [Variable Fonts](https://mo-variable-fonts-3.netlify.app/) / [Variable Fonts 2](https://mo-variable-fonts-2.netlify.app/) / [Kinetic Fonts](https://mo-split-type.netlify.app/)
+Experimental type: [Variable Fonts](https://mo-variable-fonts-3.netlify.app/) / [Variable Fonts 2](https://mo-variable-fonts-2.netlify.app/) / [Kinetic Type](https://mo-kinetic-type.netlify.app/)
 
 Vanilla JS: [Type Checker](https://mo-type-checker.netlify.app/) / [Parallax Experiments](https://mo-parallax-experiment.netlify.app/) / [Drumkit](https://vanilla-drumkit.netlify.app/)
 
@@ -109,3 +109,5 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 #042 - [P5: Intro](https://mo-p5-intro.netlify.app/)
 
 #043 - [P5: Split Type](https://mo-split-type.netlify.app/)
+
+#044 - [P5: Kinetic Type](https://mo-kinetic-type.netlify.app/)
