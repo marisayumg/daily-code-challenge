@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0f0fb9;
+
+  font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100vw;
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 1px;
+  outline: none !important;
+  appearance: none;
+  border: none;
+  background: #fff;
+  margin-top: 24px;
+}
+input[type="range"]::-moz-focus-outer {
+  border: 0;
+}
+input[type="range"]:hover {
+  outline: none;
+}
+
+/* Chrome */
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 8px;
+  height: 24px;
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Moz */
+
+input[type="range"]::-moz-range-thumb {
+  width: 8px;
+  height: 24px;
+  background: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+input[type="range"]::-moz-range-progress {
+  background-color: #fff;
+  height: 100%;
+  border: none;
+}
+input[type="range"]::-moz-range-track {
+  background-color: #fff;
+  border: none;
+  height: 100%;
+}
+
+/* IE*/
+
+input[type="range"]::-ms-fill-lower {
+  background-color: #fff;
+  height: 100%;
+  border: none;
+}
+input[type="range"]::-ms-fill-upper {
+  background-color: #fff;
+  border: none;
+  height: 100%;
+}
