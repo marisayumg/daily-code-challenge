@@ -9,6 +9,8 @@ React: [Tenzies Game](https://mo-tenzies-game.netlify.app/) / [React Gallery](ht
 
 API: [Uova Contentful](https://mo-uova-contentful.netlify.app/) / [Jiffy Clips](https://mo-jiffy-clips.netlify.app/) / [Designer Quotes](https://mo-designer-quotes.netlify.app/)
 
+Experimental type: [Variable Fonts](https://mo-variable-fonts-3.netlify.app/) / [Variable Fonts 2](https://mo-variable-fonts-2.netlify.app/) / [Kinetic Fonts](https://mo-split-type.netlify.app/)
+
 Vanilla JS: [Type Checker](https://mo-type-checker.netlify.app/) / [Parallax Experiments](https://mo-parallax-experiment.netlify.app/) / [Drumkit](https://vanilla-drumkit.netlify.app/)
 
 Animation: [Moiré Effect](https://mo-moire-effect.netlify.app/) / [Zipper](https://mo-zipper.netlify.app/) / [Square Pattern](https://mo-square-pattern.netlify.app/)
