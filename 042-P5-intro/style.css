@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Inter";
+  src: url(assets/inter-var.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-size: 8vw;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
