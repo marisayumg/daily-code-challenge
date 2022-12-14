@@ -111,3 +111,5 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 #043 - [P5: Split Type](https://mo-split-type.netlify.app/)
 
 #044 - [P5: Kinetic Type](https://mo-kinetic-type.netlify.app/)
+
+#045 - [P5: Out Of Office](https://mo-out-of-office.netlify.app/)
