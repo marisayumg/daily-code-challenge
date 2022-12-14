@@ -22,11 +22,22 @@ function draw() {
   const tileSize = 50;
 
   for (let y = 0; y < 12; y++) {
+    // change on mouseX position
+    // let position = winMouseX / windowWidth;
+    let position = frameCount;
+    position = position % 200;
+
+    if (position > 100) {
+      position = 200 - position;
+    }
+
+    position = position / 100;
+    position = easeInOutCubic(position);
     // start
     const sx = 0;
-    const sy = y * tileSize;
+    const sy = y * tileSize * position;
     const sw = 1200;
-    const sh = tileSize;
+    const sh = tileSize * position + (600 - tileSize) * (1 - position);
 
     // destination
     const dx = 0;
