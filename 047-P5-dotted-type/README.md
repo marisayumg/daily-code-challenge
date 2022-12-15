@@ -1,4 +1,4 @@
-## Tenzies Game
+## Dotted Type
 
 See this project [live here](https://mo-dotted-type.netlify.app/).
 
