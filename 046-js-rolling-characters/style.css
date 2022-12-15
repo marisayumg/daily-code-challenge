@@ -9,6 +9,13 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  scroll-snap-type: y mandatory;
+  height: 100%;
+  overflow-y: scroll;
+}
+
 body {
   font-family: "Neue Einstellung", Helvetica, Arial, sans-serif;
   background-color: white;
@@ -16,18 +23,19 @@ body {
 
 h1,
 h2 {
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 100;
 }
 
 section {
   width: 100vw;
   height: 100vh;
-  padding: 24px;
+  padding: 40px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 30vmax auto;
   background-attachment: fixed;
+  scroll-snap-align: start;
 }
 
 .section-1 {
