@@ -14,12 +14,14 @@ function setup() {
 }
 
 function draw() {
+  const noiseLevel = 0.01;
   background("#0f0fb9");
   fill("white");
   noStroke();
 
   points.forEach((point) => {
-    const distortion = createVector(5, 5);
+    const distance = createVector(point.x - mouseX, point.y - mouseY);
+    const distortion = distance.mult(60 / distance.mag());
 
     circle(point.x + distortion.x, point.y + distortion.y, 2);
   });
@@ -30,7 +32,27 @@ function draw() {
 
   beginShape();
   points.forEach((point) => {
-    vertex(point.x, point.y);
+    const distance = createVector(point.x - mouseX, point.y - mouseY);
+    const distortion = distance.mult(60 / distance.mag());
+
+    const noiseX =
+      40 *
+        noise(
+          noiseLevel * point.x,
+          noiseLevel * point.y,
+          noiseLevel * frameCount
+        ) -
+      20;
+    const noiseY =
+      40 *
+        noise(
+          noiseLevel * point.x,
+          noiseLevel * point.y,
+          noiseLevel * frameCount
+        ) -
+      20;
+
+    vertex(point.x + distortion.x + noiseX, point.y + distortion.y + noiseY);
   });
   endShape();
 }
