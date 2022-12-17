@@ -117,3 +117,5 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 #046 - [JS: Rolling Characters](https://mo-rolling-characters.netlify.app/)
 
 #047 - [P5: Dotted Type](https://mo-dotted-type.netlify.app/)
+
+#048 — [Datavis: Boundless](https://mo-boundless.netlify.app/)
