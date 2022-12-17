@@ -17,7 +17,7 @@ Animation: [Moiré Effect](https://mo-moire-effect.netlify.app/) / [Zipper](http
 
 WebGL: [Shaders Gradient](https://shaders1-gradient.netlify.app/) / [Shaders2 test pattern](https://shaders-zebra.netlify.app/)
 
-Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatures](https://mo-heatmap.netlify.app/) / [Step Counter](https://mo-step-counter.netlify.app/)
+Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatures](https://mo-heatmap.netlify.app/) / [Browser Adoption](https://mo-boundless.netlify.app/)
 
 
 
@@ -118,4 +118,4 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 
 #047 - [P5: Dotted Type](https://mo-dotted-type.netlify.app/)
 
-#048 — [Datavis: Boundless](https://mo-boundless.netlify.app/)
+#048 — [Datavis: Browser Adoption](https://mo-boundless.netlify.app/)
