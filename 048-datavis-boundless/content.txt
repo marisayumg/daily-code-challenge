@@ -1,0 +1,6 @@
+Data source:
+http://gs.statcounter.com/browser-market-share#monthly-200901-201903
+
+Font:
+Space Grotesk by Florian Karsten
+https://github.com/floriankarsten/space-grotesk

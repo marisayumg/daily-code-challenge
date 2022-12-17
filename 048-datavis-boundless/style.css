@@ -1,0 +1,109 @@
+@font-face {
+  font-family: Space Grotesk;
+  src: url(assets/spacegrotesk-medium.woff2),
+    url(assets/spacegrotesk-medium.woff);
+}
+
+:root {
+  --background: #111117;
+  --text: #ffffff;
+  --chrome: #f9d054;
+  --ie: #2676d3;
+  --firefox: #ed5e27;
+  --safari: #44aae4;
+  --opera: #ec564c;
+  --android: #abc549;
+}
+
+body {
+  font-family: Space Grotesk;
+  font-size: 18px;
+  line-height: 1.5;
+
+  background-color: var(--background);
+  color: var(--text);
+}
+
+svg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 620px;
+  max-height: 620px;
+}
+
+header {
+  position: fixed;
+  top: 48px;
+  left: 48px;
+  max-width: 300px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+div.month {
+  position: fixed;
+  top: 48px;
+  right: 48px;
+}
+
+a.restart {
+  position: fixed;
+  bottom: 48px;
+  right: 48px;
+  padding: 8px 16px 8px 16px;
+  border: 1px solid var(--text);
+  border-radius: 4px;
+  text-align: center;
+  min-width: 120px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+a.restart:hover {
+  background-color: var(--text);
+  color: var(--background);
+}
+
+footer {
+  position: fixed;
+  bottom: 48px;
+  left: 48px;
+}
+
+footer span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  margin: 0 5px 0 0;
+}
+
+div.chrome span {
+  background-color: var(--chrome);
+}
+
+div.ie span {
+  background-color: var(--ie);
+}
+
+div.firefox span {
+  background-color: var(--firefox);
+}
+
+div.opera span {
+  background-color: var(--opera);
+}
+
+div.safari span {
+  background-color: var(--safari);
+}
+
+div.android span {
+  background-color: var(--android);
+}
