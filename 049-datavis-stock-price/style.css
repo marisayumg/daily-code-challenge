@@ -1,0 +1,89 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+:root {
+  --background: #ffffff;
+  --text: #020202;
+  --line-color: #cccccc;
+  --area-color: #f1f1f1;
+  --circle-color: #f03009;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Inter, Arial;
+  font-size: 18px;
+  line-height: 1.2;
+
+  background-color: var(--background);
+  color: var(--text);
+}
+
+header {
+  position: fixed;
+  top: 24px;
+  left: 32px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+svg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 960px;
+  height: 320px;
+  transform: translate(-50%, -50%);
+}
+
+path.area {
+  fill: var(--area-color);
+}
+
+path.line {
+  fill: none;
+  stroke: var(--line-color);
+  stroke-width: 2px;
+  stroke-linecap: round;
+}
+
+circle {
+  fill: var(--circle-color);
+}
+
+rect {
+  fill: var(--text);
+}
+
+text {
+  fill: var(--background);
+  text-anchor: middle;
+  font-family: Inter;
+}
+
+text.close {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+text.date {
+  font-size: 12px;
+}
