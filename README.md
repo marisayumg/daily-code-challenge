@@ -119,3 +119,5 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 #047 - [P5: Dotted Type](https://mo-dotted-type.netlify.app/)
 
 #048 — [Datavis: Browser Adoption](https://mo-boundless.netlify.app/)
+
+#049 - [Datavis: Stock Price](https://mo-stock-price.netlify.app/)
