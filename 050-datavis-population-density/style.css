@@ -1,10 +1,10 @@
 body {
-	font-family: Arial;
-	font-size: 14px;
-	line-height: 1.5;
-	
-	background-color: #222222;
-	color: #ffffff;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.5;
+
+  background-color: #222222;
+  color: #ffffff;
   height: 20000px;
 }
 
@@ -27,8 +27,8 @@ header {
 }
 
 h1 {
-	font-size: 21px;
-	font-weight: 700;
+  font-size: 21px;
+  font-weight: 700;
 }
 
 path {
