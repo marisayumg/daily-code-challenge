@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Popular Baby Names</title>
+  </head>
+  <body>
+    <header>
+      <h1>Popular Baby Names</h1>
+    </header>
+    <form>
+      <h2>Still unsure for a name for your little one?</h2>
+      <h3>Search below our popularity graph.</h3>
+      <input
+        type="text"
+        name="name"
+        placeholder="Enter a name e.g. Helen"
+        autocomplete="off"
+      />
+    </form>
+    <section>
+      <nav>
+        <div>Results for <span class="name">Kendall</span></div>
+        <div>Female Male</div>
+      </nav>
+      <svg></svg>
+    </section>
+  </body>
+  <script src="js/d3.min.js"></script>
+  <script src="js/data.min.js"></script>
+  <script src="js/names.js"></script>
+</html>
