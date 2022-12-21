@@ -1,5 +1,5 @@
 :root {
-  --male: red;
+  --male: black;
   --female: blue;
 }
 
@@ -35,6 +35,10 @@ header {
   justify-content: space-between;
   gap: 40px;
   padding: 40px 0;
+}
+
+svg {
+  width: 100%;
 }
 
 form {
@@ -73,11 +77,11 @@ div.key span {
 }
 
 span.female {
-  background-color: aqua;
+  background-color: var(--female);
 }
 
 span.male {
-  background-color: red;
+  background-color: var(--male);
 }
 
 path {
