@@ -1,3 +1,8 @@
+:root {
+  --male: red;
+  --female: blue;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -73,4 +78,22 @@ span.female {
 
 span.male {
   background-color: red;
+}
+
+path {
+  fill: none;
+}
+
+path.male {
+  stroke: var(--male);
+  stroke-width: 12px;
+  stroke-linecap: round;
+  mix-blend-mode: multiply;
+}
+
+path.female {
+  stroke: var(--female);
+  stroke-width: 12px;
+  stroke-linecap: round;
+  mix-blend-mode: multiply;
 }
