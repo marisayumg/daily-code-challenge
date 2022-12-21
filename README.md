@@ -123,3 +123,5 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 #049 - [Datavis: Stock Price](https://mo-stock-price.netlify.app/)
 
 #050 - [Datavis: Population Density](https://mo-population-density.netlify.app/)
+
+#051 - [Datavis: Name Popularity](https://mo-name-popularity.netlify.app/)
