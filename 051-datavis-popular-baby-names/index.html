@@ -5,26 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Popular Baby Names</title>
+    <title>Names Popularity</title>
   </head>
   <body>
     <header>
-      <h1>Popular Baby Names</h1>
+      <h1>Names<br />Popularity</h1>
+      <form>
+        <h2>
+          Find out how names popularity has changed over the years with this
+          graph below.
+        </h2>
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter a name e.g. Helen"
+          autocomplete="off"
+        />
+      </form>
     </header>
-    <form>
-      <h2>Still unsure for a name for your little one?</h2>
-      <h3>Search below our popularity graph.</h3>
-      <input
-        type="text"
-        name="name"
-        placeholder="Enter a name e.g. Helen"
-        autocomplete="off"
-      />
-    </form>
+    <hr />
     <section>
       <nav>
-        <div>Results for <span class="name">Kendall</span></div>
-        <div>Female Male</div>
+        <div>Results for <span class="name">Richard</span></div>
+        <div class="key">
+          <span class="female"></span> Female <span class="male"></span> Male
+        </div>
       </nav>
       <svg></svg>
     </section>
