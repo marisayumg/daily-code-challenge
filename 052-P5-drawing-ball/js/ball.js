@@ -5,8 +5,9 @@ function setup() {
 
 // runs every frame
 function draw() {
-  background("black");
+  // last two numbers are the alpha channel that creates the drag effect
+  background("#00000011");
   fill("white");
   noStroke();
-  circle(300, 200, 300);
+  circle(mouseX, mouseY, 300);
 }
