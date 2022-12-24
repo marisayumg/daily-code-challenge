@@ -19,7 +19,7 @@ function draw() {
 function mouseDragged() {
   hue = hue + 1;
   size = size + 1;
-  size = constrain(size, 20, 100);
+  size = 100;
 
   if (hue > 100) {
     hue = 0;
