@@ -132,4 +132,4 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 
 #054 - [P5: Flower Brush](https://mo-flower-brush.netlify.app/)
 
-#055 - [P5: Flower Brush 2]()
+#055 - [P5: Flower Brush 2](https://mo-flower-brush2.netlify.app/)
