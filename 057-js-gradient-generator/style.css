@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+div.layer2 {
+  mix-blend-mode: lighten;
+}
+
+button {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 16px 24px;
+  transition: all 100ms ease-in-out;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
