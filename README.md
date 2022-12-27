@@ -135,3 +135,7 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 #055 - [P5: Flower Brush 2](https://mo-flower-brush2.netlify.app/)
 
 #056 - [P5: Blob](https://mo-blob.netlify.app/)
+
+#057 - [JS: Gradient Generator](https://mo-gradient-generator.netlify.app/)
+
+#058 - [P5: Perlin Noise]()
