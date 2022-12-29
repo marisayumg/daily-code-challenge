@@ -139,3 +139,5 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 #057 - [JS: Gradient Generator](https://mo-gradient-generator.netlify.app/)
 
 #058 - [P5: Perlin Noise](https://mo-perlin-noise.netlify.app/)
+
+#059 - [P5: Flying Letters]()
