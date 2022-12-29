@@ -141,3 +141,5 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 #058 - [P5: Perlin Noise](https://mo-perlin-noise.netlify.app/)
 
 #059 - [P5: Flying Balls](https://mo-flying-balls.netlify.app/)
+
+#060 - [P5: Flying Letters]()
