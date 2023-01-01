@@ -126,7 +126,7 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 
 #051 - [Datavis: Name Popularity](https://mo-name-popularity.netlify.app/)
 
-#052 - [P5: Ball Drawing](https://mo-ball-drawing.netlify.app/)
+#052 - [P5: Ball Drawing](https://mo-mouse-move-ball.netlify.app/)
 
 #053 - [P5: Wall Ball](https://mo-wall-ball.netlify.app/)
 
