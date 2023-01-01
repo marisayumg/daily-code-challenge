@@ -3,15 +3,21 @@ class Word {
     let randomAngle = random(-0.25 * PI, 0.25 * PI);
 
     this.position = createVector(x, y);
-    this.speed = createVector(0, -5);
+    this.speed = createVector(0, -10);
     this.speed = this.speed.rotate(randomAngle);
     this.size = size;
+    this.acc = createVector(0, 0.5);
   }
 
   move() {
+    this.speed = this.speed.add(this.acc);
     this.position = this.position.add(this.speed);
-    this.size = constrain(this.size - 1, 0, 50);
-    this.speed = this.speed.rotate(PI * 0.01);
+
+    if (this.position.y > windowHeight - 25) {
+      this.speed.y = this.speed.y * -0.8;
+    }
+
+    this.position.y = constrain(this.position.y, -1000, windowHeight - 25);
   }
 
   draw() {
