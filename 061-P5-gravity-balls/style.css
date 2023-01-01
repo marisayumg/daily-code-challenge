@@ -15,7 +15,7 @@ h1 {
   font-size: 18px;
   font-weight: 400;
   position: fixed;
-  bottom: 40px;
+  top: 40px;
   left: 50%;
   text-align: center;
   transform: translateX(-50%);
