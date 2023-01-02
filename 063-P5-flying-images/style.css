@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 400;
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+}
