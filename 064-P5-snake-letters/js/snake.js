@@ -2,6 +2,7 @@ class Snake {
   constructor(maxLength) {
     this.points = [];
     this.maxLength = maxLength;
+    this.time = 0;
   }
 
   push(point) {
@@ -16,8 +17,11 @@ class Snake {
     strokeWeight(4);
     beginShape();
     this.points.forEach((point) => {
-      vertex(point.x, point.y);
+      let n = noise(point.x, point.y, this.time) * 50 - 25;
+      curveVertex(point.x + n, point.y + n);
     });
     endShape();
+
+    this.time = this.time + 0.01;
   }
 }

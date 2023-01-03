@@ -7,7 +7,8 @@ class Letter {
 
   draw() {
     // text
-    noStroke();
+    stroke("white");
+    strokeWeight(2);
     fill("white");
     textSize(64);
     textAlign(CENTER, CENTER);
