@@ -1,23 +1,24 @@
 let words;
 let position;
-let sentences;
-let sentencesNum;
+let images;
+let imagesNum;
+
+function preload() {
+  images = [
+    loadImage("assets/image-1.jpg"),
+    loadImage("assets/image-2.jpg"),
+    loadImage("assets/image-3.jpg"),
+    loadImage("assets/image-4.jpg"),
+    loadImage("assets/image-5.jpg"),
+    loadImage("assets/image-6.jpg"),
+    loadImage("assets/image-7.jpg"),
+  ];
+}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   words = [];
-  sentences = [
-    "Marisa",
-    "Oosthuizen",
-    "is",
-    "a",
-    "digital",
-    "designer",
-    "and",
-    "coding",
-    "enthusiast",
-  ];
-  sentencesNum = 0;
+  imagesNum = 0;
   position = createVector(100, windowHeight / 2);
 }
 
@@ -30,20 +31,15 @@ function draw() {
 }
 
 function mouseClicked() {
-  let sentence = sentences[sentencesNum];
-  let w = new Word(mouseX, mouseY, sentence);
+  let image = images[imagesNum];
+  let w = new Word(mouseX, mouseY, image);
   words.push(w);
-  sentencesNum++;
-  if (sentencesNum > sentences.length - 1) {
-    sentencesNum = 0;
+  imagesNum++;
+  if (imagesNum > images.length - 1) {
+    imagesNum = 0;
   }
 }
 
-function keyTyped() {
-  let o = new Word(position.x, position.y, key);
-  words.push(o);
-  position.x = position.x + 50;
-  if (position.x > windowWidth - 100) {
-    position.x = 100;
-  }
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
