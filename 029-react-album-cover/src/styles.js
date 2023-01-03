@@ -25,13 +25,10 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
-        text-align: center;
         font-family: "Arial", sans-serif;
-        font-weight: 900;
-        text-transform: uppercase;
         background-color: black;
     }
-
+    
     img {
         max-width: 640px;
     }
@@ -68,4 +65,36 @@ export const Wrapper = styled.section`
   align-items: center;
   height: 100vh;
   width: 100vw;
+`;
+
+export const AbsoluteCenter = css`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
+export const Button = styled.button`
+  ${AbsoluteCenter};
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 100%;
+  padding: 24px 40px;
+  font-size: 18px;
+  text-transform: uppercase;
+  z-index: 2;
+  cursor: pointer;
+  transition: background 150ms ease-in-out;
+
+  :hover {
+    background: white;
+    color: black;
+    animation: shadow 1s forwards;
+  }
+
+  @media (max-width: 700px) {
+    padding: 30px;
+    width: calc(100vw - 30px);
+  }
 `;

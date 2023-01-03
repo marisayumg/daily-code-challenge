@@ -17,6 +17,7 @@ export const Header = styled.header`
 export const H1 = styled.h1`
   font-size: 140px;
   line-height: 100%;
+  text-transform: uppercase;
 
   @media (max-width: 700px) {
     font-size: 80px;
