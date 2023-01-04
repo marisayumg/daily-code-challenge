@@ -1,0 +1,22 @@
+Data sources –
+https://www.figma.com/developers
+https://api.figma.com/v1/files/PROJECTKEY
+https://api.figma.com/v1/images/PROJECTKEY
+
+Typography –
+Inter UI
+https://rsms.me/inter
+@import url('https://rsms.me/inter/inter-ui.css');
+
+Body: 24px at 500 weight, line height 1.25
+Heading: same at 900 weight
+
+Colors –
+Text: #ffffff
+Background: #222222
+Background angle: #292929 at 5deg skew
+
+Content –
+Figure
+⟵
+⟶
