@@ -152,4 +152,4 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 
 #064 - [P5: Snake Letters](https://mo-snake-letters.netlify.app/)
 
-#065 - [P5: Snake Image](https://mo-snake-images.netlify.app/)
+#065 - [P5: Snake Images](https://mo-snake-images.netlify.app/)
