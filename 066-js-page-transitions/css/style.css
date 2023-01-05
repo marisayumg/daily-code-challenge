@@ -1,0 +1,216 @@
+@font-face {
+  font-family: "Ortica";
+  font-weight: 700;
+  src: url(../fonts/ortica-bold.woff2), url(../fonts/ortica-bold.woff);
+}
+
+@font-face {
+  font-family: "Ortica";
+  font-weight: 400;
+  src: url(../fonts/ortica-light.woff2), url(../fonts/ortica-light.woff);
+}
+
+:root {
+  --background: #f4acac;
+  --text-color: #000011;
+
+  --nav-link: rgba(0, 0, 17, 0.6);
+  --nav-link-selected: rgba(0, 0, 17, 1);
+  --nav-underline: rgba(0, 0, 17, 0.1);
+  --nav-underline-hover: rgba(0, 0, 17, 1);
+
+  --timing: 0.25s;
+  --bezier: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+body {
+  font-family: Ortica, Arial;
+  font-size: 20px;
+  line-height: 1.5;
+  background-color: var(--background);
+  color: var(--text-color);
+  padding: 0 48px 0 48px;
+
+  transition: background-color calc(3 * var(--timing)) var(--bezier);
+}
+
+body.feed {
+  --background: #000011;
+  --text-color: #ffffff;
+
+  --nav-link: rgba(255, 255, 255, 0.6);
+  --nav-link-selected: rgba(255, 255, 255, 1);
+  --nav-underline: rgba(255, 255, 255, 0.1);
+  --nav-underline-hover: rgba(255, 255, 255, 1);
+}
+
+header,
+section,
+footer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-flow: dense;
+  grid-gap: 32px;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  font-weight: 700;
+  font-size: 28px;
+  height: 120px;
+  align-items: center;
+}
+
+header h1,
+header p,
+header nav {
+  grid-column: span 2;
+}
+
+a {
+  text-decoration: none;
+  color: var(--nav-link);
+  border-bottom: 0.1em solid var(--nav-underline);
+}
+
+a:hover,
+a.selected {
+  border-bottom-color: var(--nav-underline-hover);
+}
+
+a.selected {
+  color: var(--nav-link-selected);
+}
+
+nav a {
+  margin-right: 24px;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+.full {
+  grid-column: span 6;
+}
+
+.full-img {
+  height: calc(100vh - 240px);
+  width: 100%;
+  object-fit: cover;
+}
+
+.full-img.sticky {
+  position: sticky;
+  top: 120px;
+}
+
+.split {
+  grid-column: span 3;
+}
+
+section p {
+  margin: 0 0 24px 0;
+  max-width: 30em;
+}
+
+section p:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  height: 120px;
+  font-size: 16px;
+  padding: 40px 0 0 0;
+}
+
+footer p {
+  grid-column: span 3;
+  max-width: 25em;
+}
+
+footer nav:last-child {
+  grid-column: span 2;
+}
+
+section.feed {
+  grid-auto-rows: 40vw;
+}
+
+section.feed img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  grid-column: span 2;
+}
+
+.fade-leave-active,
+.fade-enter-active,
+.fade-once-active {
+  transition: opacity var(--timing) var(--bezier),
+    transform var(--timing) var(--bezier);
+}
+
+/* initial state */
+.fade-leave {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* end state */
+.fade-leave-to {
+  opacity: 0;
+  transform: translate(0, 30px);
+}
+
+/* initial state */
+.fade-enter,
+.fade-once {
+  opacity: 0;
+  transform: translate(0, 30px);
+}
+
+/* end state */
+.fade-enter-to,
+.fade-once-to {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translate(0, 30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+header h1,
+header p,
+header nav,
+footer {
+  animation: fade var(--timing) var(--bezier) both;
+}
+
+header h1 {
+  animation-delay: var(--timing);
+}
+
+header p {
+  animation-delay: calc(2 * var(--timing));
+}
+
+header nav {
+  animation-delay: calc(3 * var(--timing));
+}
+
+header footer {
+  animation-delay: calc(4 * var(--timing));
+}
