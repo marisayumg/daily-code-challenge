@@ -85,7 +85,12 @@ h3:before {
   background-color: var(--highlight-color);
   margin-right: 0.4em;
   transition: transform 0.4s 0.5s;
-  transform: scale(0.2);
+  transform: scale(0);
+}
+
+h2.in-view:before,
+h3.in-view:before {
+  transform: scale(1);
 }
 
 div.main .sticky {
@@ -146,4 +151,17 @@ footer p.socials {
 footer a {
   display: block;
   color: currentColor;
+}
+
+div.image {
+  overflow: hidden;
+}
+
+div.image img {
+  transform: translate(0, 120%);
+  transition: transform 1s 0.25s var(--timing);
+}
+
+div.image.in-view img {
+  transform: translate(0, 0);
 }
