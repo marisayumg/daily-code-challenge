@@ -1,0 +1,149 @@
+:root {
+  --story-background-color: #f7d45e;
+  --product-background-color: #ffffff;
+
+  --text-color: #222222;
+  --highlight-color: #ffffff;
+
+  --timing: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+body {
+  font-family: Helvetica, Arial;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.35;
+
+  background-color: var(--story-background-color);
+  color: var(--text-color);
+
+  transition: background-color 0.5s;
+}
+
+body.product,
+section.products-index {
+  background-color: var(--product-background-color);
+  --highlight-color: #c8090a;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px 96px 0;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+header img {
+  height: 40px;
+}
+
+section,
+footer {
+  padding: 128px 96px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 48px 48px;
+}
+
+section.products-index {
+  background-color: var(--product-background-color);
+  align-items: end;
+}
+
+section div.main {
+  grid-column: span 2;
+}
+
+section.blog-index div.main {
+  grid-row: 1 / 4;
+}
+
+section a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+h2:before,
+h3:before {
+  content: "";
+  display: inline-block;
+  height: 0.7em;
+  width: 0.7em;
+  border-radius: 50%;
+  background-color: var(--highlight-color);
+  margin-right: 0.4em;
+  transition: transform 0.4s 0.5s;
+  transform: scale(0.2);
+}
+
+div.main .sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 128px;
+
+  display: block;
+}
+
+section img {
+  transition: transform 0.25s;
+}
+
+section a:hover img {
+  transform: translate(0, -10px);
+}
+
+section div.main img {
+  width: 100%;
+  min-height: 400px;
+  height: calc(100vh - 300px);
+  object-fit: cover;
+}
+
+div.post {
+  grid-column: span 2;
+}
+
+div.post h2 {
+  font-size: 48px;
+}
+
+div.post p {
+  margin: 36px 0 0 0;
+}
+
+a.button {
+  display: inline-block;
+
+  background-color: var(--highlight-color);
+  color: var(--product-background-color);
+
+  font-weight: 700;
+  padding: 0.75em 1.5em 0.75em 1.5em;
+}
+
+footer {
+  background: var(--text-color);
+  color: var(--product-background-color);
+  font-size: 18px;
+}
+
+footer p.socials {
+  grid-column: span 2;
+}
+
+footer a {
+  display: block;
+  color: currentColor;
+}
