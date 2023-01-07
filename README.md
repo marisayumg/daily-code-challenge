@@ -154,4 +154,6 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 
 #065 - [P5: Snake Images](https://mo-snake-images.netlify.app/)
 
-#066 - [P5: Page Transitions](https://mo-page-transitions.netlify.app/)
+#066 - [JS: Page Transitions](https://mo-page-transitions.netlify.app/)
+
+#067 - [JS: Page Transitions 2](https://mo-page-transitions2.netlify.app/)
