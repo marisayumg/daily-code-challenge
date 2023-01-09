@@ -36,7 +36,7 @@ const setupCanvas = function (canvas) {
 
 const startDraw = function (canvas, x, y) {
   const context = canvas.getContext("2d");
-  const colors = ["blue", "red", "pink", "yellow", "orange"];
+  const colors = ["blue", "green", "orange"];
   const randomNum = Math.floor(Math.random() * colors.length);
 
   context.strokeStyle = colors[randomNum];

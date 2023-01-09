@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: black;
   height: 100vh;
   cursor: none;
 }
@@ -15,6 +15,7 @@ section {
   position: absolute;
   top: 160px;
   left: 80px;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 80px;
   font-weight: 900;
