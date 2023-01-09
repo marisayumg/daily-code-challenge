@@ -10,6 +10,21 @@ body {
   cursor: none;
 }
 
+section {
+  width: 90%;
+  position: absolute;
+  top: 160px;
+  left: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80px;
+  font-weight: 900;
+  user-select: none;
+}
+
+section span {
+  opacity: 0;
+}
+
 div.cursor {
   position: absolute;
   top: 50%;
@@ -17,7 +32,7 @@ div.cursor {
   width: 10px;
   height: 10px;
   transform: translate(-50%, -50%);
-  background-color: blue;
+  background-color: black;
   border-radius: 50%;
   transition: width 0.25s, height 0.25s;
 }
