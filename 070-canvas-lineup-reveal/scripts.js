@@ -1,5 +1,7 @@
 const cursorTag = document.querySelector("div.cursor");
-const canvasTag = document.querySelector("canvas.in");
+const canvasIn = document.querySelector("canvas.in");
+const canvasOut = document.querySelector("canvas.out");
+const bodyTag = document.querySelector("body");
 
 let isMouseDown = false;
 
@@ -18,7 +20,7 @@ const moveCursor = function (x, y) {
 
 const setupCanvas = function (canvas) {
   const w = window.innerWidth;
-  const h = window.innerHeight;
+  const h = bodyTag.offsetHeight;
   const dpi = window.devicePixelRatio;
   canvas.width = w * dpi;
   canvas.height = h * dpi;
@@ -27,19 +29,25 @@ const setupCanvas = function (canvas) {
 
   const context = canvas.getContext("2d");
   context.scale(dpi, dpi);
-  context.fillStyle = "blue";
-  context.strokeStyle = "blue";
+
+  if (canvas.classList.contains("in")) {
+    context.fillStyle = "#000";
+    context.strokeStyle = "#fff";
+  } else {
+    context.fillStyle = "#fff";
+    context.strokeStyle = "#000";
+  }
+
   context.lineWidth = 80;
   context.lineCap = "round";
   context.lineJoin = "round";
+
+  context.rect(0, 0, w, h);
+  context.fill();
 };
 
 const startDraw = function (canvas, x, y) {
   const context = canvas.getContext("2d");
-  const colors = ["blue", "green", "orange"];
-  const randomNum = Math.floor(Math.random() * colors.length);
-
-  context.strokeStyle = colors[randomNum];
 
   context.moveTo(x, y);
   context.beginPath();
@@ -53,12 +61,14 @@ const moveDraw = function (canvas, x, y) {
   }
 };
 
-setupCanvas(canvasTag);
+setupCanvas(canvasIn);
+setupCanvas(canvasOut);
 
 document.addEventListener("mousedown", function (event) {
   isMouseDown = true;
   growCursor();
-  startDraw(canvasTag, event.pageX, event.pageY);
+  startDraw(canvasIn, event.pageX, event.pageY);
+  startDraw(canvasOut, event.pageX, event.pageY);
 });
 
 document.addEventListener("mouseup", function () {
@@ -68,5 +78,11 @@ document.addEventListener("mouseup", function () {
 
 document.addEventListener("mousemove", function (event) {
   moveCursor(event.pageX, event.pageY);
-  moveDraw(canvasTag, event.pageX, event.pageY);
+  moveDraw(canvasIn, event.pageX, event.pageY);
+  moveDraw(canvasOut, event.pageX, event.pageY);
+});
+
+window.addEventListener("resize", function () {
+  setupCanvas(canvasIn);
+  setupCanvas(canvasOut);
 });

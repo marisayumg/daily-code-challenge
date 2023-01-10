@@ -1,5 +1,6 @@
 const cursorTag = document.querySelector("div.cursor");
 const canvasTag = document.querySelector("canvas.in");
+const bodyTag = document.querySelector("body");
 
 let isMouseDown = false;
 
