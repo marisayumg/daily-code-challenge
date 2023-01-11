@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Sprat";
+  src: url(fonts/sprat-variable.ttf);
+}
+
+body {
+  width: 100%;
+  background-color: #e6decf;
+  font-size: 40px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-variation-settings: "wght" 100;
+}
+
+section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+section div {
+  width: 80%;
+  margin: 32px 32px 80px 32px;
+}
+
+section img {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+div.logo-fill,
+div.logo-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 95%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+div.logo-fill {
+  z-index: -2;
+  background-image: url(assets/mo-logo-fill.svg);
+}
+
+div.logo-outline {
+  z-index: 2;
+  background-image: url(assets/mo-logo-outline.svg);
+}
