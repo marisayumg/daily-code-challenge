@@ -165,3 +165,5 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 #070 - [Canvas: Lineup Reveal](https://mo-canvas-lineup-reveal.netlify.app/)
 
 #071 - [JS: Different Timezones](https://mo-different-timezones.netlify.app/)
+
+#072 - [CSS: Logo Outline Effect](https://mo-logo-outline-effect.netlify.app/)
