@@ -1,0 +1,84 @@
+@font-face {
+  font-family: PT Root;
+  src: url("fonts/ptroot.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: PT Root, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  border-radius: 100px;
+  padding: 8px 24px;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+section {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section div.split {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section div.slides {
+  width: 440px;
+  height: 640px;
+  position: relative;
+}
+
+section div.slides img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 440px;
+  height: 640px;
+}
+
+section div.info {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+span.arrow img {
+  width: 24px;
+}
