@@ -20,6 +20,18 @@ body {
 h1,
 h2 {
   font-size: 16px;
+  display: flex;
+}
+
+h1 span,
+h2 span {
+  display: inline-block;
+  width: 150px;
+  flex: 0 0 auto;
+}
+
+h2 span {
+  width: 250px;
 }
 
 h3 {
@@ -39,16 +51,19 @@ img {
 }
 
 header {
+  width: 100%;
   position: fixed;
-  top: 0;
+  top: 16px;
   left: 0;
-  z-index: 1;
+  z-index: 1000000000;
+  overflow: hidden;
 }
 
 section {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  overflow: hidden;
 }
 
 section div.split {
