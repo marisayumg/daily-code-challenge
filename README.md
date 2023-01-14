@@ -169,3 +169,6 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 #072 - [CSS: Logo Outline Effect](https://mo-logo-outline-effect.netlify.app/)
 
 #073 - [JS: Panning Gallery](https://mo-panning-gallery.netlify.app/)
+
+#074 - [JS: Seamstress](https://mo-seamstress.netlify.app/)
+
