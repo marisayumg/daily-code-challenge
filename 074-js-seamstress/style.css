@@ -44,10 +44,21 @@ a {
   color: #000;
   border-radius: 100px;
   padding: 8px 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
-img {
-  width: 100%;
+a img {
+  width: 12px;
+  height: 16px;
+  object-fit: cover;
+  object-position: center right;
+  transition: width 0.25s;
+}
+
+a:hover img {
+  width: 24px;
 }
 
 header {
@@ -61,9 +72,13 @@ header {
 
 section {
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   overflow: hidden;
+}
+
+section.alternative {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 section div.split {
@@ -85,6 +100,7 @@ section div.slides img {
   left: 0;
   width: 440px;
   height: 640px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
 }
 
 section div.info {
@@ -92,8 +108,26 @@ section div.info {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  z-index: 10000001;
 }
 
-span.arrow img {
-  width: 24px;
+@media (max-width: 1000px) {
+  section {
+    display: block;
+    margin: 80px 24px;
+  }
+
+  section.alternative {
+    display: block;
+  }
+
+  section div.info {
+    margin: 64px 0;
+  }
+
+  section div.slides,
+  section div.slides img {
+    width: 80vw;
+    height: 120vw;
+  }
 }
