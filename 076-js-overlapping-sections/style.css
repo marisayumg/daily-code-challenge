@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 1.25;
+
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 1.25;
+}
+
+img {
+  max-height: 100%;
+}
+
+header,
+section {
+  padding: 24px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+section.image {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+}
+
+section.about {
+  background-color: #e4d3d2;
+}
+
+section.about p {
+  max-width: 800px;
+}
+
+section.image1 {
+  background-color: #d0bfbe;
+}
+
+section.image2 {
+  background-color: #c5bbbf;
+}
+
+section.image3 {
+  background-color: #bdc9c7;
+}
