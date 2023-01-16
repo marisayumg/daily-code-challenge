@@ -172,3 +172,4 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 
 #074 - [JS: Seamstress](https://mo-seamstress.netlify.app/)
 
+#075 - [JS: Accordion](https://mo-js-accordion.netlify.app/)
