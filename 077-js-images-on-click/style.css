@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1,
+h2 {
+  font-size: clamp(1.25rem, -0.9375rem + 3vw, 1.5rem);
+  font-weight: 100;
+}
+
+header {
+  display: flex;
+  gap: 15vw;
+  padding: 40px;
+}
+
+img {
+  width: 400px;
+}
+
+@media (max-width: 700px) {
+  header {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
