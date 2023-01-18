@@ -175,3 +175,5 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 #075 - [JS: Accordion](https://mo-js-accordion.netlify.app/)
 
 #076 - [CSS: Overlapping Sections](https://mo-overlapping-sections.netlify.app/)
+
+#077 - [JS: Images on click](https://mo-js-images-on-click.netlify.app/)
