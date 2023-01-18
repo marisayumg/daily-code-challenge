@@ -20,7 +20,6 @@ function placeImage(x, y) {
 
   const img = document.createElement("img");
   img.setAttribute("src", nextSrc);
-  img.setAttribute("draggable", "false");
 
   img.style.left = x + "px";
   img.style.top = y + "px";
