@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Circular";
+  font-weight: 400;
+  src: url("../fonts/CircularStd-Book.otf");
+}
+
+@font-face {
+  font-family: "Circular";
+  font-weight: 800;
+  src: url("../fonts/CircularStd-Bold.otf");
+}
+
+:root {
+  --font-primary: "Circular";
+  --font-secondary: "Helvetica";
+
+  /* Base values */
+  --text-base-size: 1em;
+  --text-scale-ratio: 1.4;
+
+  /* Type scale */
+
+  --text-xs: calc(1em / var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-s: calc(1em / var(--text-scale-ratio));
+  --text-m: calc(1em * var(--text-scale-ratio));
+  --text-l: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xl: calc(
+    1em * var(--text-scale-ratio) * var(--text-scale-ratio) *
+      var(--text-scale-ratio)
+  );
+  --text-xxl: calc(
+    1em * var(--text-scale-ratio) * var(--text-scale-ratio) *
+      var(--text-scale-ratio) * var(--text-scale-ratio)
+  );
+  --text-xxxl: calc(
+    1em * var(--text-scale-ratio) * var(--text-scale-ratio) *
+      var(--text-scale-ratio) * var(--text-scale-ratio) *
+      var(--text-scale-ratio)
+  );
+}
+
+/* text size */
+.text--xxxl {
+  font-size: var(--text-xxl);
+}
+
+h1,
+.text--xxl {
+  font-size: var(--text-xxl);
+}
+
+h2,
+.text--xl {
+  font-size: var(--text-xl);
+}
+
+h3,
+.text--l {
+  font-size: var(--text-l);
+}
+
+h4,
+.text--m {
+  font-size: var(--text-m);
+}
+
+.text--s,
+small {
+  font-size: var(--text-s);
+}
+
+.text--xs {
+  font-size: var(--text-xs);
+}
