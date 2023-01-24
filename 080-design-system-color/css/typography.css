@@ -19,56 +19,60 @@
   --text-scale-ratio: 1.4;
 
   /* Type scale */
-
   --text-xs: calc(1em / var(--text-scale-ratio) * var(--text-scale-ratio));
   --text-s: calc(1em / var(--text-scale-ratio));
   --text-m: calc(1em * var(--text-scale-ratio));
   --text-l: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
   --text-xl: calc(
-    1em * var(--text-scale-ratio) * var(--text-scale-ratio) *
-      var(--text-scale-ratio)
-  );
-  --text-xxl: calc(
-    1em * var(--text-scale-ratio) * var(--text-scale-ratio) *
-      var(--text-scale-ratio) * var(--text-scale-ratio)
-  );
-  --text-xxxl: calc(
-    1em * var(--text-scale-ratio) * var(--text-scale-ratio) *
-      var(--text-scale-ratio) * var(--text-scale-ratio) *
-      var(--text-scale-ratio)
-  );
+    1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
 }
 
 /* text size */
 .text--xxxl {
   font-size: var(--text-xxl);
+  line-height: 100%;
+  margin-bottom: 24px;
 }
 
 h1,
 .text--xxl {
   font-size: var(--text-xxl);
+  line-height: 100%;
+  margin-bottom: 24px;
 }
 
 h2,
 .text--xl {
   font-size: var(--text-xl);
+  line-height: 100%;
+  margin-bottom: 24px;
 }
 
 h3,
 .text--l {
   font-size: var(--text-l);
+  line-height: 100%;
+  margin-bottom: 24px;
 }
 
 h4,
 .text--m {
   font-size: var(--text-m);
+  line-height: 150%;
+  margin-bottom: 24px;
 }
 
 .text--s,
 small {
   font-size: var(--text-s);
+  line-height: 150%;
+  margin-bottom: 24px;
 }
 
 .text--xs {
   font-size: var(--text-xs);
+  line-height: 100%;
+  margin-bottom: 24px;
 }

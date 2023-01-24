@@ -23,3 +23,7 @@ button {
 button:hover {
   background-color: var(--color-primary-dark);
 }
+
+.container {
+    max-width: 640px;
+}
