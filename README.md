@@ -179,3 +179,5 @@ Datavis: [Living cost](https://mo-living-cost.netlify.app/) / [Annual temperatur
 #077 - [JS: Images on click](https://mo-js-images-on-click.netlify.app/)
 
 #078 - [JS: Pixelated Image Loader](https://mo-pixelated-image-loader.netlify.app/)
+
+#081 – [JS: Album Cover Generator](https://mo-album-cover-generator.netlify.app/)
