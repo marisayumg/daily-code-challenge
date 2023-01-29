@@ -1,5 +1,64 @@
+@font-face {
+  font-family: "Circular";
+  font-weight: 100;
+  src: url("fonts/CircularStd-Light.otf");
+}
+
+@font-face {
+  font-family: "Circular";
+  font-weight: 200;
+  src: url("fonts/CircularStd-Book.otf");
+}
+
+@font-face {
+  font-family: "Circular";
+  font-weight: 300;
+  src: url("fonts/CircularStd-Medium.otf");
+}
+
+@font-face {
+  font-family: "Circular";
+  font-weight: 400;
+  src: url("fonts/CircularStd-Bold.otf");
+}
+
+@font-face {
+  font-family: "Circular";
+  font-weight: 500;
+  src: url("fonts/CircularStd-Black.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Circular", Helvetica, Arial, sans-serif;
+  font-size: 100px;
+  line-height: 100px;
+
+  background-color: white;
+  color: #111118;
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-auto-rows: 100px;
+  text-align: center;
+}
+
+div {
+  font-weight: 400;
+  transform: scale(0.2);
+  text-align: center;
+  transition: all 1s ease-out;
 }
